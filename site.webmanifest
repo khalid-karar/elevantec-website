@@ -1,10 +1,10 @@
 {
-  "name": "Avyra Company | شركة أفيرا",
-  "short_name": "Avyra",
+  "name": "Elevantec Company | شركة إليفانتك",
+  "short_name": "Elevantec",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#0b0b0d",
-  "theme_color": "#0b0b0d",
+  "background_color": "#0b1b2b",
+  "theme_color": "#0b1b2b",
   "icons": [
     {
       "src": "/assets/img/icon-192.png",

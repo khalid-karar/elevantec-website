@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static site generator for Avyra Company / شركة أفيرا (Arabic + English).
+"""Static site generator for Elevantec Company / شركة إليفانتك (Arabic + English).
 
 Run `python3 build.py` after editing the content below. It rewrites every
 HTML page, sitemap.xml, robots.txt and 404.html. No dependencies beyond Python 3.
@@ -13,9 +13,9 @@ CSS = "/assets/css/style.css?v=" + _v("assets/css/style.css")
 JS = "/assets/js/main.js?v=" + _v("assets/js/main.js")
 
 # ---------------------------------------------------------------- settings (EDIT THESE)
-SITE = "https://avyra.sa"            # PLACEHOLDER: set the real domain
-EMAIL = "info@avyra.sa"              # PLACEHOLDER
-PRIVACY_EMAIL = "privacy@avyra.sa"   # PLACEHOLDER
+SITE = "https://elevantec.sa"            # PLACEHOLDER: set the real domain
+EMAIL = "info@elevantec.sa"              # PLACEHOLDER
+PRIVACY_EMAIL = "privacy@elevantec.sa"   # PLACEHOLDER
 PHONE_DISPLAY = "+966 50 020 9038"                   # e.g. "+966 5X XXX XXXX"; empty hides the phone rows
 PHONE_TEL = "+966500209038"                       # e.g. "+9665XXXXXXXX"
 LINKEDIN_URL = ""                    # empty hides the LinkedIn row
@@ -40,15 +40,15 @@ ICONS = {
 T = {
 "ar": {
  "dir": "rtl", "lang": "ar", "base": "/", "other": "en", "other_label": "English", "locale": "ar_SA", "other_locale": "en_US",
- "brand": "شركة أفيرا", "brand_core": "أفيرا", "co": "شركة", "skip": "انتقل إلى المحتوى", "home_label": "الرئيسية",
+ "brand": "شركة إليفانتك", "brand_core": "إليفانتك", "co": "شركة", "skip": "انتقل إلى المحتوى", "home_label": "الرئيسية",
  "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("contact", "تواصل معنا")],
  "nav_services": "خدماتنا",
- "title": "شركة أفيرا | الذكاء الاصطناعي المؤسسي والذكاء الجيومكاني ودعم القرار للمحافظ والمشاريع في الرياض",
- "desc": "شركة أفيرا شركة سعودية في الرياض تجمع حلول الذكاء الاصطناعي المؤسسي، والذكاء الاصطناعي الجيومكاني (GeoAI)، ودعم القرار للمحافظ والمشاريع لدعم برامج التحول الرقمي والبيئة في رؤية 2030.",
+ "title": "شركة إليفانتك | الذكاء الاصطناعي المؤسسي والذكاء الجيومكاني ودعم القرار للمحافظ والمشاريع في الرياض",
+ "desc": "شركة إليفانتك شركة سعودية في الرياض تجمع حلول الذكاء الاصطناعي المؤسسي، والذكاء الاصطناعي الجيومكاني (GeoAI)، ودعم القرار للمحافظ والمشاريع لدعم برامج التحول الرقمي والبيئة في رؤية 2030.",
  "eyebrow": "الرياض · المملكة العربية السعودية",
  "h1": "نحوّل بياناتك المعقدة إلى قرارات تتحكم أنت بها",
  "lead": "الذكاء الاصطناعي المؤسسي والجيومكاني (GeoAI) ودعم القرار للمحافظ والمشاريع للجهات الحكومية والشركات والمنشآت الصغيرة والمتوسطة والمكاتب المهنية. نحوّل التعقيد إلى وضوح، والوضوح إلى أثر مستدام.",
- "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار أفيرا",
+ "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار إليفانتك",
  "trust": ["اعتمادات PfMP · PgMP · PMP في إدارة المحافظ والبرامج والمشاريع", "شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
  "about_eyebrow": "عن الشركة", "about_h": "الرؤية والرسالة",
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
@@ -77,7 +77,7 @@ T = {
    "outcome": "لا نُدير محفظتك بالنيابة عنك، بل نمنحك النظام الذي يُريك سير العمل لتبني عليه قرارك."},
  ],
  "proj_eyebrow": "خبراتنا", "proj_h": "نماذج من خبراتنا",
- "proj_note": "تحافظ أفيرا على السرية. تُشارك المراجع التفصيلية ودراسات الحالة مباشرة، بعد توقيع اتفاقيات السرية المناسبة. وتمثل الفئات أدناه الخبرة المجمّعة لقيادة الشركة وفرق شركائها.",
+ "proj_note": "تحافظ إليفانتك على السرية. تُشارك المراجع التفصيلية ودراسات الحالة مباشرة، بعد توقيع اتفاقيات السرية المناسبة. وتمثل الفئات أدناه الخبرة المجمّعة لقيادة الشركة وفرق شركائها.",
  "proj_cols": ("القطاع", "نوع المشروع", "دورنا"),
  "proj": [("الذكاء الاصطناعي المؤسسي (السعودية)", "وكلاء ذكاء اصطناعي لسير عمل الخدمات", "نشر تشغيلي للذكاء الاصطناعي"),
           ("أنظمة ذكاء اصطناعي مخصصة", "تطوير تطبيقات ذكاء اصطناعي متكاملة", "هندسة النظام ونشره"),
@@ -88,7 +88,7 @@ T = {
  "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "قاد عمليات الشركة في المملكة وشراكتها الدولية على مدى أكثر من عشر سنوات في تسليم برمجيات المؤسسات والتحول الرقمي الحكومي."),
           ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP في إدارة المحافظ والبرامج والمشاريع.")],
  "network": "يقود فريقنا الأساسي كل مشروع، ويُنفَّذ بدعم مهندسين ومحللين متخصصين في الذكاء الاصطناعي وتطوير التطبيقات المتكاملة والاستشعار عن بعد ونظم المعلومات الجغرافية، وخبراء في البيئة والبنية التحتية.",
- "why_eyebrow": "لماذا أفيرا", "why_h": "الميزة السعودية",
+ "why_eyebrow": "لماذا إليفانتك", "why_h": "الميزة السعودية",
  "why": [("شركة سعودية مسجلة ومقرها الرياض", "نعمل داخل بيئتكم التنظيمية وبيئة المشتريات."),
          ("متوافقون مع رؤية 2030", "يدعم عملنا مباشرة أهداف الاستدامة البيئية والتحول الرقمي."),
          ("نشر سيادي للذكاء الاصطناعي", "تصميم متوافق مع NCA-ECC ونظام حماية البيانات الشخصية، وقابل للنشر محليًا أو على سحابة خاصة، وهو حاسم للجهات الحكومية."),
@@ -103,13 +103,13 @@ T = {
           "interest": "الخدمة المطلوبة", "msg": "رسالتك", "msg_ph": "اكتب هنا عن احتياجك أو المشروع الذي تعمل عليه.",
           "consent": "أوافق على استخدام بياناتي للرد على طلبي وفق", "send": "إرسال", "sending": "جارٍ الإرسال...",
           "ok": "وصلنا طلبك، وسنعود إليك قريبًا.", "err": "تعذر الإرسال. أرسل لنا على البريد مباشرة: " + EMAIL,
-          "mail_note": "سيفتح الإرسال تطبيق البريد لديك برسالة جاهزة.", "req": "هذا الحقل مطلوب", "subject": "استفسار جديد من موقع أفيرا",
+          "mail_note": "سيفتح الإرسال تطبيق البريد لديك برسالة جاهزة.", "req": "هذا الحقل مطلوب", "subject": "استفسار جديد من موقع إليفانتك",
           "opts": ["الذكاء الاصطناعي المؤسسي", "GeoAI", "دعم القرار للمحافظ والمشاريع", "أخرى"]},
  "privacy": {
-  "title": "سياسة الخصوصية | شركة أفيرا", "desc": "سياسة الخصوصية لشركة أفيرا: كيف نتعامل مع البيانات التي تصلنا عبر البريد الإلكتروني ونموذج التواصل، وما الذي لا نجمعه، وكيف تمارس حقوقك.",
+  "title": "سياسة الخصوصية | شركة إليفانتك", "desc": "سياسة الخصوصية لشركة إليفانتك: كيف نتعامل مع البيانات التي تصلنا عبر البريد الإلكتروني ونموذج التواصل، وما الذي لا نجمعه، وكيف تمارس حقوقك.",
   "h1": "سياسة الخصوصية", "effective": "تاريخ السريان: نوفمبر 2026",
   "body": [
-   ("1. من نحن", "تُشغّل شركة أفيرا (الرياض، المملكة العربية السعودية) هذا الموقع والخدمات المرتبطة به. وتشير عبارتا «شركة أفيرا» و«نحن» إلى هذه الجهة."),
+   ("1. من نحن", "تُشغّل شركة إليفانتك (الرياض، المملكة العربية السعودية) هذا الموقع والخدمات المرتبطة به. وتشير عبارتا «شركة إليفانتك» و«نحن» إلى هذه الجهة."),
    ("2. المعلومات التي نجمعها", "لا يستخدم هذا الموقع ملفات تعريف الارتباط ولا أدوات تحليل أو تتبع إعلاني، وتُقدَّم الخطوط والملفات من خادمنا نفسه لا من أطراف ثالثة. ومثل أي موقع، يسجّل مزوّد الاستضافة بيانات تقنية معتادة (مثل عنوان الشبكة والتاريخ والوقت والصفحة المطلوبة) لأغراض الأمان والتشغيل. وإذا راسلتنا عبر البريد الإلكتروني أو النموذج، فإننا نستلم الاسم وجهة العمل وبيانات التواصل ومضمون رسالتك."),
    ("3. كيف نستخدم معلوماتك", "نستخدم المعلومات التي تصلنا للرد على استفسارك وتقييم فرص التعاون وحفظ سجل المراسلات المؤسسية. ولا نبيع بياناتك الشخصية ولا نؤجرها ولا نشاركها مع أطراف ثالثة لأغراض تسويقية."),
    ("4. مكان معالجة البيانات", "تُعالج البيانات التي تصلنا عبر هذا الموقع وفق متطلبات نظام حماية البيانات الشخصية (PDPL) وإرشادات الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) المعمول بها."),
@@ -120,15 +120,15 @@ T = {
 },
 "en": {
  "dir": "ltr", "lang": "en", "base": "/en/", "other": "ar", "other_label": "العربية", "locale": "en_US", "other_locale": "ar_SA",
- "brand": "Avyra Company", "brand_core": "AVYRA", "co": "Company", "skip": "Skip to content", "home_label": "Home",
+ "brand": "Elevantec Company", "brand_core": "elevantec", "co": "Company", "skip": "Skip to content", "home_label": "Home",
  "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("contact", "Contact")],
  "nav_services": "Services",
- "title": "Avyra Company | Enterprise AI, GeoAI and Portfolio and Project Decision Support in Riyadh",
- "desc": "Avyra Company is a Saudi company in Riyadh combining enterprise AI deployment, GeoAI and portfolio and project decision support for Vision 2030 digital transformation and environmental programs.",
+ "title": "Elevantec Company | Enterprise AI, GeoAI and Portfolio and Project Decision Support in Riyadh",
+ "desc": "Elevantec Company is a Saudi company in Riyadh combining enterprise AI deployment, GeoAI and portfolio and project decision support for Vision 2030 digital transformation and environmental programs.",
  "eyebrow": "Riyadh · Saudi Arabia",
  "h1": "Turn complex data into decisions you control.",
  "lead": "Enterprise AI, GeoAI and portfolio and project decision support for government, corporates, SMEs and professional firms. We turn complexity into clarity, and clarity into sustainable impact.",
- "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Avyra logo",
+ "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Elevantec logo",
  "trust": ["PfMP · PgMP · PMP certified portfolio, program and project management", "Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
  "about_eyebrow": "About", "about_h": "Vision and mission",
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
@@ -157,7 +157,7 @@ T = {
    "outcome": "We don\'t manage your portfolio for you. We give you the system that shows you how the work is moving, so you can build your decisions on it."},
  ],
  "proj_eyebrow": "Experience", "proj_h": "Representative experience",
- "proj_note": "Avyra prioritizes confidentiality. Specific organizational references and detailed case studies are shared directly under appropriate confidentiality agreements. The categories below represent the combined track record of our leadership and partner teams.",
+ "proj_note": "Elevantec prioritizes confidentiality. Specific organizational references and detailed case studies are shared directly under appropriate confidentiality agreements. The categories below represent the combined track record of our leadership and partner teams.",
  "proj_cols": ("Sector", "Project type", "Our role"),
  "proj": [("Enterprise AI (KSA)", "AI agents for service workflows", "Operational AI deployment"),
           ("Custom AI systems", "Full-stack AI application development", "System architecture and deployment"),
@@ -168,7 +168,7 @@ T = {
  "team": [("Eng. Khalid Abdelrahman", "Chief Executive Officer", "Has led the company’s operations in the Kingdom and its international partnership for over a decade, in enterprise software delivery and government digital transformation."),
           ("Dr. Mohammed Abdallah", "Technical Director", "Holds PfMP, PgMP and PMP certifications in portfolio, program and project management.")],
  "network": "Every engagement is led by our core team and delivered with specialist engineers and analysts in AI, full-stack development, GIS and remote sensing, and infrastructure and environmental advisory.",
- "why_eyebrow": "Why Avyra", "why_h": "The Saudi advantage",
+ "why_eyebrow": "Why Elevantec", "why_h": "The Saudi advantage",
  "why": [("Saudi-registered, Riyadh-based", "We operate inside your regulatory and procurement environment."),
          ("Vision 2030-aligned", "Our work directly supports environmental sustainability and digital transformation goals."),
          ("Sovereign AI deployment", "Designed to align with NCA-ECC and PDPL, and deployable on-premises or in private cloud. Critical for government clients."),
@@ -183,13 +183,13 @@ T = {
           "interest": "Service of interest", "msg": "Your message", "msg_ph": "Tell us about your need or the project you are working on.",
           "consent": "I agree that my data is used to answer my request, as described in the", "send": "Send", "sending": "Sending...",
           "ok": "We received your message and will get back to you shortly.", "err": "Could not send. Please email us directly: " + EMAIL,
-          "mail_note": "Sending opens your email app with a ready message.", "req": "This field is required", "subject": "New enquiry from the Avyra website",
+          "mail_note": "Sending opens your email app with a ready message.", "req": "This field is required", "subject": "New enquiry from the Elevantec website",
           "opts": ["Enterprise AI", "GeoAI", "Portfolio and project decision support", "Other"]},
  "privacy": {
-  "title": "Privacy Policy | Avyra Company", "desc": "Avyra Company's privacy policy: how we handle data sent by email and through the contact form, what we do not collect, and how to exercise your rights.",
+  "title": "Privacy Policy | Elevantec Company", "desc": "Elevantec Company's privacy policy: how we handle data sent by email and through the contact form, what we do not collect, and how to exercise your rights.",
   "h1": "Privacy policy", "effective": "Effective: November 2026",
   "body": [
-   ("1. Who we are", "Avyra Company (Riyadh, Saudi Arabia) operates this website and its related services. References to \"Avyra Company\" and \"we\" mean this entity."),
+   ("1. Who we are", "Elevantec Company (Riyadh, Saudi Arabia) operates this website and its related services. References to \"Elevantec Company\" and \"we\" mean this entity."),
    ("2. Information we collect", "This website does not use cookies, analytics or advertising trackers, and its fonts and files are served from our own server, not third parties. Like any website, our hosting provider logs routine technical data (such as network address, date and time, and the page requested) for security and operations. If you write to us by email or the contact form, we receive your name, organization, contact details and the content of your message."),
    ("3. How we use your information", "We use the information we receive to answer your enquiry, assess collaboration opportunities and keep a record of business correspondence. We do not sell or rent your personal data, and we do not share it with third parties for marketing."),
    ("4. Where data is processed", "Data sent through this website is handled in line with the Personal Data Protection Law (PDPL) and applicable SDAIA guidance."),
@@ -210,7 +210,7 @@ def write(rel, content):
     open(p, "w", encoding="utf-8").write(content)
 
 def org_ld(lang):
-    d = {"@context": "https://schema.org", "@type": "Organization", "name": "Avyra Company", "alternateName": "شركة أفيرا",
+    d = {"@context": "https://schema.org", "@type": "Organization", "name": "Elevantec Company", "alternateName": "شركة إليفانتك",
          "url": SITE + "/", "logo": SITE + "/assets/img/icon-512.png", "email": EMAIL,
          "address": {"@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA"}, "areaServed": "SA"}
     if PHONE_TEL: d["telephone"] = PHONE_TEL
@@ -231,7 +231,7 @@ def head(lang, key, title, desc, ld=None):
 <link rel="alternate" hreflang="{lang}" href="{url(lang, key)}">
 <link rel="alternate" hreflang="{o}" href="{url(o, key)}">
 <link rel="alternate" hreflang="x-default" href="{url('ar', key)}">
-<meta name="theme-color" content="#0b0b0d">
+<meta name="theme-color" content="#0b1b2b">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{esc(t["brand"])}">
 <meta property="og:title" content="{esc(title)}">
@@ -322,12 +322,12 @@ GO = {
         "services": "ثلاث ركائز متكاملة: الذكاء الاصطناعي المؤسسي، والاستشارات في GeoAI، ودعم القرار للمحافظ والمشاريع.",
         "projects": "فئات المشاريع التي نعمل فيها ودورنا في كل منها.",
         "team": "قيادة الشركة والشبكة الفنية التي تدعمها.",
-        "contact": "اكتب لنا عن مشروعك، ونرد خلال يوم عمل واحد.", "more": "اعرف المزيد", "explore_h": "استكشف أفيرا"},
+        "contact": "اكتب لنا عن مشروعك، ونرد خلال يوم عمل واحد.", "more": "اعرف المزيد", "explore_h": "استكشف إليفانتك"},
  "en": {"about": "Our vision and mission, and why we bring portfolio and project decision support, GeoAI and enterprise AI into one team.",
         "services": "Three integrated pillars: enterprise AI, GeoAI advisory, and portfolio and project decision support.",
         "projects": "The project categories we work in and our role in each.",
         "team": "The company's leadership and the technical network behind it.",
-        "contact": "Tell us about your project. We reply within one business day.", "more": "Learn more", "explore_h": "Explore Avyra"},
+        "contact": "Tell us about your project. We reply within one business day.", "more": "Learn more", "explore_h": "Explore Elevantec"},
 }
 
 def sec_about(t):
@@ -361,7 +361,7 @@ def sec_team(t):
         lines = []
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{EMAIL}"><bdi>{EMAIL}</bdi></a></li>')
-        team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div>\n'
+        team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><ul>{"".join(lines)}</ul></div>\n'
     return f'<section><div class="wrap stack g48"><div class="cards">{team}</div><p class="muted" style="max-width:70ch">{t["network"]}</p></div></section>\n'
 
 def sec_contact(lang, t):
@@ -401,7 +401,7 @@ def home(lang):
     arrow = "←" if lang == "ar" else "→"
     trust = "".join("<li>" + esc(x).replace("PfMP · PgMP · PMP", "<bdi>PfMP · PgMP · PMP</bdi>") + "</li>" for x in t["trust"])
     logo = f"/assets/img/logo-{lang}.png"
-    dims = {"ar": (440, 486), "en": (440, 573)}[lang]
+    dims = {"ar": (440, 167), "en": (440, 125)}[lang]
     names = dict(t["nav"])
     cards = "".join(f'<div class="card link"><h3>{names[k]}</h3><p>{g[k]}</p><a class="more stretch" href="{path_for(lang, k)}">{g["more"]} {arrow}</a></div>' for k in PAGES[:4])
     body = f'''<body>
@@ -474,8 +474,8 @@ if __name__ == "__main__":
     write("404.html", notfound())
     write("sitemap.xml", sitemap())
     write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
-    write("site.webmanifest", json.dumps({"name": "Avyra Company | شركة أفيرا", "short_name": "Avyra", "start_url": "/", "display": "browser",
-        "background_color": "#0b0b0d", "theme_color": "#0b0b0d",
+    write("site.webmanifest", json.dumps({"name": "Elevantec Company | شركة إليفانتك", "short_name": "Elevantec", "start_url": "/", "display": "browser",
+        "background_color": "#0b1b2b", "theme_color": "#0b1b2b",
         "icons": [{"src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False, indent=2) + "\n")
     write("_headers", """/*
   X-Content-Type-Options: nosniff
