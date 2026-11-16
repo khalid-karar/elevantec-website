@@ -361,7 +361,7 @@ def sec_team(t):
         lines = []
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{EMAIL}"><bdi>{EMAIL}</bdi></a></li>')
-        team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><ul>{"".join(lines)}</ul></div>\n'
+        team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div>\n'
     return f'<section><div class="wrap stack g48"><div class="cards">{team}</div><p class="muted" style="max-width:70ch">{t["network"]}</p></div></section>\n'
 
 def sec_contact(lang, t):
