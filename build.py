@@ -27,7 +27,7 @@ FORM_ENDPOINT = "https://api.web3forms.com/submit"   # Web3Forms; "" = mailto fa
 FORM_KEY = "843ee7ab-d506-48fc-a351-fb3d3ba869f9"   # public access key, delivers to info@elevantec.sa
 
 _P = lambda f: f'<link rel="preload" href="/assets/fonts/{f}-normal.woff2" as="font" type="font/woff2" crossorigin>\n'
-PRELOAD = {"ar": _P("ibm-plex-sans-arabic-arabic-400") + _P("reem-kufi-arabic-700"),
+PRELOAD = {"ar": _P("ibm-plex-sans-arabic-arabic-400") + _P("noto-kufi-arabic-arabic-700"),
            "en": _P("ibm-plex-sans-latin-400") + _P("ibm-plex-sans-latin-600")}
 
 ICONS = {
