@@ -60,7 +60,7 @@
       if (form.querySelector('[name="_gotcha"]').value) return; // bot
       if (!valid()) return;
       var data = new FormData(form), endpoint = form.dataset.endpoint;
-      if (endpoint && form.dataset.key) { data.append('access_key', form.dataset.key); data.append('subject', form.dataset.subject); data.append('from_name', 'Sahm Alkarar Company website'); }
+      if (endpoint && form.dataset.key) { data.append('access_key', form.dataset.key); data.append('subject', form.dataset.subject); data.append('from_name', 'Elevantec Company website'); }
       if (!endpoint) {
         var lines = []; ['name', 'organization', 'email', 'phone', 'division'].forEach(function (k) { if (data.get(k)) lines.push(k + ': ' + data.get(k)); });
         var body = lines.join('\n') + '\n\n' + data.get('message');
@@ -68,7 +68,10 @@
         return;
       }
       btn.disabled = true; say(form.dataset.sending, true);
-      fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      var req = endpoint === '/'
+        ? fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+        : fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      req
         .then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); say(form.dataset.ok, true); })
         .catch(function () { say(form.dataset.err, false); })
         .then(function () { btn.disabled = false; });

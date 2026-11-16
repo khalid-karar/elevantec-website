@@ -14,8 +14,8 @@ JS = "/assets/js/main.js?v=" + _v("assets/js/main.js")
 
 # ---------------------------------------------------------------- settings (EDIT THESE)
 SITE = "https://elevantec.sa"            # reserved domain
-EMAIL = "info@elevantec.sa"              # PLACEHOLDER
-PRIVACY_EMAIL = "privacy@elevantec.sa"   # PLACEHOLDER
+EMAIL = "info@elevantec.sa"
+PRIVACY_EMAIL = "privacy@elevantec.sa"
 PHONE_DISPLAY = "+966 50 020 9038"                   # e.g. "+966 5X XXX XXXX"; empty hides the phone rows
 PHONE_TEL = "+966500209038"                       # e.g. "+9665XXXXXXXX"
 LINKEDIN_URL = ""                    # empty hides the LinkedIn row
@@ -23,7 +23,7 @@ BOOKING_URL = ""                     # Cal.com / Calendly link; empty hides the 
 CR = "7050745707"                    # same legal entity as Maya AI / Sahm Alkarar
 # Contact form: empty endpoint = opens the visitor's email app. For Web3Forms use
 # FORM_ENDPOINT = "https://api.web3forms.com/submit" and put the access key in FORM_KEY.
-FORM_ENDPOINT = ""
+FORM_ENDPOINT = "/"   # "/" = Netlify Forms (submissions are emailed by Netlify notifications); "" = mailto fallback
 FORM_KEY = ""
 
 _P = lambda f: f'<link rel="preload" href="/assets/fonts/{f}-normal.woff2" as="font" type="font/woff2" crossorigin>\n'
@@ -299,8 +299,10 @@ def form_html(lang):
     f = T[lang]["form"]; t = T[lang]
     opts = "".join(f'<option value="{esc(o)}">{o}</option>' for o in f["opts"])
     action = FORM_ENDPOINT or f"mailto:{EMAIL}"
-    return f'''<form class="form" id="f-home" method="post" action="{action}" data-endpoint="{FORM_ENDPOINT}" data-key="{FORM_KEY}" data-subject="{esc(f["subject"])}" data-ok="{esc(f["ok"])}" data-err="{esc(f["err"])}" data-sending="{esc(f["sending"])}" data-req="{esc(f["req"])}" novalidate>
-  <h2>{f["h"]}</h2>
+    nf = ' name="contact" data-netlify="true" netlify-honeypot="_gotcha"' if FORM_ENDPOINT == "/" else ""
+    nf_hidden = f'<input type="hidden" name="form-name" value="contact"><input type="hidden" name="subject" value="{esc(f["subject"])}">' if FORM_ENDPOINT == "/" else ""
+    return f'''<form class="form" id="f-home"{nf} method="post" action="{action}" data-endpoint="{FORM_ENDPOINT}" data-key="{FORM_KEY}" data-subject="{esc(f["subject"])}" data-ok="{esc(f["ok"])}" data-err="{esc(f["err"])}" data-sending="{esc(f["sending"])}" data-req="{esc(f["req"])}" novalidate>
+  {nf_hidden}<h2>{f["h"]}</h2>
   <div class="fields">
     <label for="f-name">{f["name"]}<input id="f-name" name="name" type="text" autocomplete="name" required></label>
     <label for="f-org">{f["org"]}<input id="f-org" name="organization" type="text" autocomplete="organization"></label>
