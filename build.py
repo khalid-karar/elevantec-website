@@ -13,7 +13,7 @@ CSS = "/assets/css/style.css?v=" + _v("assets/css/style.css")
 JS = "/assets/js/main.js?v=" + _v("assets/js/main.js")
 
 # ---------------------------------------------------------------- settings (EDIT THESE)
-SITE = "https://elevantec.sa"            # PLACEHOLDER: set the real domain
+SITE = "https://elevantec.sa"            # reserved domain
 EMAIL = "info@elevantec.sa"              # PLACEHOLDER
 PRIVACY_EMAIL = "privacy@elevantec.sa"   # PLACEHOLDER
 PHONE_DISPLAY = "+966 50 020 9038"                   # e.g. "+966 5X XXX XXXX"; empty hides the phone rows
