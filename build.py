@@ -23,8 +23,8 @@ BOOKING_URL = ""                     # Cal.com / Calendly link; empty hides the 
 CR = "7050745707"                    # same legal entity as Maya AI / Sahm Alkarar
 # Contact form: empty endpoint = opens the visitor's email app. For Web3Forms use
 # FORM_ENDPOINT = "https://api.web3forms.com/submit" and put the access key in FORM_KEY.
-FORM_ENDPOINT = "/"   # "/" = Netlify Forms (submissions are emailed by Netlify notifications); "" = mailto fallback
-FORM_KEY = ""
+FORM_ENDPOINT = "https://api.web3forms.com/submit"   # Web3Forms; "" = mailto fallback
+FORM_KEY = "843ee7ab-d506-48fc-a351-fb3d3ba869f9"   # public access key, delivers to info@elevantec.sa
 
 _P = lambda f: f'<link rel="preload" href="/assets/fonts/{f}-normal.woff2" as="font" type="font/woff2" crossorigin>\n'
 PRELOAD = {"ar": _P("ibm-plex-sans-arabic-arabic-400") + _P("reem-kufi-arabic-700"),
