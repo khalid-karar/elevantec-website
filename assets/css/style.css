@@ -428,3 +428,13 @@ html[lang="ar"] .lg h3{letter-spacing:.04em;text-transform:none;font-size:16px!i
 .brand-name{color:#fff!important}
 html[lang="en"] .brand-name{text-transform:lowercase;font-weight:500!important;letter-spacing:0}
 .btn.gold{clip-path:none!important;border-radius:2px}
+
+/* v3: header/footer logo, SME cards, news profile card, social icon */
+.brand img{height:40px;width:auto}
+footer.site .brand img{height:34px}
+.loc{font-size:14px;color:var(--dim);margin:-4px 0 0}
+.card.profile .btns{margin-top:20px}
+.card.it{max-width:640px}
+.social{margin-top:6px}
+.social a{display:inline-flex;padding:8px;border:1px solid var(--line-3);color:var(--soft)}
+.social a:hover{color:var(--gold);border-color:var(--gold)}

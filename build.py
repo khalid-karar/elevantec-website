@@ -18,7 +18,8 @@ EMAIL = "info@elevantec.sa"
 PRIVACY_EMAIL = "privacy@elevantec.sa"
 PHONE_DISPLAY = "+966 50 020 9038"                   # e.g. "+966 5X XXX XXXX"; empty hides the phone rows
 PHONE_TEL = "+966500209038"                       # e.g. "+9665XXXXXXXX"
-LINKEDIN_URL = ""                    # empty hides the LinkedIn row
+LINKEDIN_URL = ""                    # empty hides the LinkedIn icon (footer) and row (contact); set when the page exists
+SUPPORT_EMAIL = "support@elevantec.sa"
 BOOKING_URL = ""                     # Cal.com / Calendly link; empty hides the "book a call" button
 CR = "7050745707"                    # same legal entity as Maya AI / Sahm Alkarar
 # Contact form: empty endpoint = opens the visitor's email app. For Web3Forms use
@@ -41,7 +42,7 @@ T = {
 "ar": {
  "dir": "rtl", "lang": "ar", "base": "/", "other": "en", "other_label": "English", "locale": "ar_SA", "other_locale": "en_US",
  "brand": "شركة إليفانتك", "brand_core": "إليفانتك", "co": "شركة", "skip": "انتقل إلى المحتوى", "home_label": "الرئيسية",
- "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("contact", "تواصل معنا")],
+ "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("news", "الأخبار"), ("contact", "تواصل معنا")],
  "nav_services": "خدماتنا",
  "title": "شركة إليفانتك | الذكاء الاصطناعي المؤسسي والذكاء الجيومكاني ودعم القرار للمحافظ والمشاريع في الرياض",
  "desc": "شركة إليفانتك شركة سعودية في الرياض تجمع حلول الذكاء الاصطناعي المؤسسي، والذكاء الاصطناعي الجيومكاني (GeoAI)، ودعم القرار للمحافظ والمشاريع لدعم برامج التحول الرقمي والبيئة في رؤية 2030.",
@@ -49,7 +50,7 @@ T = {
  "h1": "نحوّل بياناتك المعقدة إلى قرارات تتحكم أنت بها",
  "lead": "الذكاء الاصطناعي المؤسسي والجيومكاني (GeoAI) ودعم القرار للمحافظ والمشاريع للجهات الحكومية والشركات والمنشآت الصغيرة والمتوسطة والمكاتب المهنية. نحوّل التعقيد إلى وضوح، والوضوح إلى أثر مستدام.",
  "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار إليفانتك",
- "trust": ["اعتمادات PfMP · PgMP · PMP في إدارة المحافظ والبرامج والمشاريع", "شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
+ "trust": ["شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
  "about_eyebrow": "عن الشركة", "about_h": "الرؤية والرسالة",
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
  "mission_h": "رسالتنا", "mission": "نطوّر وننشر أنظمة ذكاء الأعمال بالذكاء الاصطناعي وحلول GeoAI وأنظمة دعم قرار للمحافظ والمشاريع، لتساعد الجهات السعودية على التعامل مع بياناتها بوصفها أصلًا استراتيجيًا. وبدمج الهندسة المتقدمة للذكاء الاصطناعي المؤسسي مع GeoAI وممارسات إدارة المحافظ والبرامج والمشاريع المعتمدة، نحوّل البيانات المعقدة إلى معلومات جاهزة لمجلس الإدارة.",
@@ -84,9 +85,15 @@ T = {
           ("أنظمة GeoAI مخصصة", "حلول GeoAI", "بناء النظام مع شريك التطوير"),
           ("التحول الرقمي", "برامج التحول الرقمي للشركات", "الاستشارات ودعم التنفيذ"),
           ("دعم القرار للمحافظ والمشاريع", "لوحات دعم قرار للمحافظ والمشاريع", "تصميم النظام وبناء اللوحات")],
- "team_eyebrow": "الفريق", "team_h": "القيادة",
- "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "قاد عمليات الشركة في المملكة وشراكتها الدولية على مدى أكثر من عشر سنوات في تسليم برمجيات المؤسسات والتحول الرقمي الحكومي."),
-          ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP في إدارة المحافظ والبرامج والمشاريع.")],
+ "team_eyebrow": "", "team_h": "الفريق",
+ "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "خبرة تزيد على 16 عامًا في القطاعين الخاص والعام في الولايات المتحدة، في تسليم برمجيات المؤسسات والتحول الرقمي. يقود عمليات الشركة وشراكاتها الدولية في المملكة."),
+          ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP وPMOCP وPBA في إدارة المحافظ والبرامج والمشاريع، وخبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية.")],
+ "sme_h": "نخبة الخبراء المتخصصين", "sme_eyebrow": "شبكة الخبراء",
+ "sme": [("غازي عمر", "مستشار البنية المعمارية وإنترنت الأشياء", "فرجينيا، الولايات المتحدة", "خبير في هندسة المؤسسات وحلول إنترنت الأشياء، بخبرة تمتد لعقود في تصميم أنظمة قابلة للتوسع. متخصص في دمج التقنيات الناشئة داخل البيئات الحرجة."),
+         ("محمد روب", "مستشار GeoAI", "لندن، المملكة المتحدة", "متخصص متمرس في الذكاء الجيومكاني وتحليلات الاستشعار عن بعد. ابتكر تطبيقات GeoAI في الزراعة والمراقبة البيئية والتخطيط العمراني."),
+         ("وليد عبدالله", "مستشار الأمن السيبراني", "فرجينيا، الولايات المتحدة", "مهندس أمني متخصص في تطبيق نموذج انعدام الثقة (Zero Trust) واختبار الاختراق. خبرة واسعة في حماية البنية التحتية الحرجة وبيئات البيانات الحساسة."),
+         ("محمد يوسف", "مستشار التسويق ونمو الأعمال", "القاهرة، مصر", "استراتيجي تسويق متخصص في التموضع وبناء العلامة وتوليد الطلب لشركات التقنية والأعمال. يدعم خطة دخول إليفانتك إلى السوق بالعربية والإنجليزية، من الرسائل والمحتوى حتى الحملات الرقمية.")],
+ "it_h": "الدعم الفني", "it_p": "للمساعدة في أي استفسار تقني، تواصل معنا على",
  "network": "يقود فريقنا الأساسي كل مشروع، ويُنفَّذ بدعم مهندسين ومحللين متخصصين في الذكاء الاصطناعي وتطوير التطبيقات المتكاملة والاستشعار عن بعد ونظم المعلومات الجغرافية، وخبراء في البيئة والبنية التحتية.",
  "why_eyebrow": "لماذا إليفانتك", "why_h": "الميزة السعودية",
  "why": [("شركة سعودية مسجلة ومقرها الرياض", "نعمل داخل بيئتكم التنظيمية وبيئة المشتريات."),
@@ -95,7 +102,7 @@ T = {
          ("ثلاث كفاءات في مكان واحد", "دعم القرار للمحافظ والمشاريع، وGeoAI، والذكاء الاصطناعي المؤسسي في فريق واحد."),
          ("تنفيذ بثلاث لغات", "العربية والإنجليزية والألمانية، مع ملخصات تنفيذية تناسب صانع القرار السعودي."),
          ("عمق تقني أمريكي وألماني", "تمنحنا شراكتنا التقنية في فرجينيا وألمانيا عمقًا هندسيًا، بينما تبقى المسؤولية والتنفيذ داخل المملكة.")],
- "contact_eyebrow": "تواصل معنا", "contact_h": "لنناقش مشروعك", "contact_p": "اكتب لنا عن احتياجك. يرد فريقنا في الرياض وفرجينيا خلال يوم عمل واحد، وتُعامل جميع الاستفسارات بسرية تامة.",
+ "contact_eyebrow": "تواصل معنا", "contact_h": "لنناقش مشروعك", "contact_p": "اكتب لنا عن احتياجك. يرد عليك فريقنا في الرياض وفرجينيا، وتُعامل جميع الاستفسارات بسرية تامة.",
  "book": "احجز مكالمة تشخيصية مدتها 30 دقيقة", "linkedin": "لينكدإن",
  "labels": {"email": "البريد الإلكتروني", "phone": "الهاتف", "hq": "الموقع", "hq_val": "حي العليا، الرياض، المملكة العربية السعودية", "cr": "السجل التجاري",
             "contact_h": "تواصل", "company_h": "الشركة", "privacy": "سياسة الخصوصية", "rights": "جميع الحقوق محفوظة", "links_h": "روابط"},
@@ -116,12 +123,15 @@ T = {
    ("5. حقوقك", "يحق لك طلب الاطلاع على بياناتك الشخصية أو تصحيحها أو حذفها أو تقييد معالجتها وفق الأنظمة المعمول بها. لممارسة هذه الحقوق تواصل معنا على " + PRIVACY_EMAIL + "."),
    ("6. التواصل", "لأي استفسار عن الخصوصية راسلنا على " + PRIVACY_EMAIL + "."),
   ]},
+ "news_eyebrow": "", "news_h": "الأخبار",
+ "profile_h": "حمّل الملف التعريفي للشركة", "profile_p": "تعرّف على خدماتنا ومنهجنا وفريقنا في ملف تعريفي موجز بصيغة PDF.",
+ "profile_ar": "الملف التعريفي (العربية)", "profile_en": "Company Profile (English)", "news_none": "سننشر هنا أخبار الشركة وإعلاناتها.",
  "nf_h": "الصفحة غير موجودة",
 },
 "en": {
  "dir": "ltr", "lang": "en", "base": "/en/", "other": "ar", "other_label": "العربية", "locale": "en_US", "other_locale": "ar_SA",
  "brand": "Elevantec Company", "brand_core": "elevantec", "co": "Company", "skip": "Skip to content", "home_label": "Home",
- "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("contact", "Contact")],
+ "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("news", "News"), ("contact", "Contact")],
  "nav_services": "Services",
  "title": "Elevantec Company | Enterprise AI, GeoAI and Portfolio and Project Decision Support in Riyadh",
  "desc": "Elevantec Company is a Saudi company in Riyadh combining enterprise AI deployment, GeoAI and portfolio and project decision support for Vision 2030 digital transformation and environmental programs.",
@@ -129,7 +139,7 @@ T = {
  "h1": "Turn complex data into decisions you control.",
  "lead": "Enterprise AI, GeoAI and portfolio and project decision support for government, corporates, SMEs and professional firms. We turn complexity into clarity, and clarity into sustainable impact.",
  "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Elevantec logo",
- "trust": ["PfMP · PgMP · PMP certified portfolio, program and project management", "Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
+ "trust": ["Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
  "about_eyebrow": "About", "about_h": "Vision and mission",
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
  "mission_h": "Our mission", "mission": "We develop and deploy AI business-intelligence systems, GeoAI solutions and decision-support systems for portfolios and projects, helping Saudi organizations treat data as a strategic asset. By combining enterprise-grade AI engineering, GeoAI, and certified portfolio, program and project management practice, we turn complex data into boardroom-ready intelligence.",
@@ -164,9 +174,15 @@ T = {
           ("Custom GeoAI systems", "GeoAI solutions", "System build with our development partner"),
           ("Digital transformation", "Digital transformation programs for companies", "Advisory and delivery support"),
           ("Portfolio and project decision support", "Decision-support dashboards for portfolios and projects", "System design and dashboard build")],
- "team_eyebrow": "Team", "team_h": "Leadership",
- "team": [("Eng. Khalid Abdelrahman", "Chief Executive Officer", "Has led the company’s operations in the Kingdom and its international partnership for over a decade, in enterprise software delivery and government digital transformation."),
-          ("Dr. Mohammed Abdallah", "Technical Director", "Holds PfMP, PgMP and PMP certifications in portfolio, program and project management.")],
+ "team_eyebrow": "", "team_h": "Team",
+ "team": [("Eng. Khalid Abdelrahman", "Chief Executive Officer", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
+          ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
+ "sme_h": "SME Pool", "sme_eyebrow": "Expert network",
+ "sme": [("Ghazi Omar", "Architecture & IoT Advisor", "Virginia, USA", "Expert in enterprise architecture and IoT solutions with decades of experience designing scalable systems. Specializes in integrating emerging technologies into mission-critical environments."),
+         ("Mohamed Rob", "GeoAI Advisor", "London, UK", "Seasoned specialist in geospatial intelligence and remote sensing analytics. Has pioneered innovative GeoAI applications for agriculture, environmental monitoring and urban planning."),
+         ("Walid Abdalla", "Cybersecurity Advisor", "Virginia, USA", "Security architect specializing in Zero Trust implementations and penetration testing. Extensive experience securing critical infrastructure and sensitive data environments."),
+         ("Mohamed Yousif", "Marketing & Go-to-Market Advisor", "Cairo, Egypt", "Marketing strategist focused on positioning, brand and demand generation for technology and B2B companies. Supports Elevantec’s go-to-market in Arabic and English, from messaging and content to digital campaigns.")],
+ "it_h": "IT support", "it_p": "For help with any technical inquiry, please contact us at",
  "network": "Every engagement is led by our core team and delivered with specialist engineers and analysts in AI, full-stack development, GIS and remote sensing, and infrastructure and environmental advisory.",
  "why_eyebrow": "Why Elevantec", "why_h": "The Saudi advantage",
  "why": [("Saudi-registered, Riyadh-based", "We operate inside your regulatory and procurement environment."),
@@ -175,7 +191,7 @@ T = {
          ("Three competencies in one team", "Portfolio and project decision support, GeoAI and enterprise AI together."),
          ("Trilingual delivery", "English, German and Arabic, with executive summaries tailored for Saudi decision-makers."),
          ("US and German technology depth", "Our technology partnerships in Virginia and Germany bring engineering depth, while delivery and accountability stay in the Kingdom.")],
- "contact_eyebrow": "Contact", "contact_h": "Let's discuss your project", "contact_p": "Tell us what you need. Our teams in Riyadh and Virginia respond within one business day, and all inquiries are handled with strict confidentiality.",
+ "contact_eyebrow": "Contact", "contact_h": "Let's discuss your project", "contact_p": "Tell us what you need. Our teams in Riyadh and Virginia will get back to you, and all inquiries are handled with strict confidentiality.",
  "book": "Book a 30-minute diagnostic call", "linkedin": "LinkedIn",
  "labels": {"email": "Email", "phone": "Phone", "hq": "Location", "hq_val": "Al Olaya, Riyadh, Saudi Arabia", "cr": "C.R. number",
             "contact_h": "Contact", "company_h": "Company", "privacy": "Privacy policy", "rights": "All rights reserved", "links_h": "Links"},
@@ -196,9 +212,14 @@ T = {
    ("5. Your rights", "You may ask to access, correct, delete or restrict the processing of your personal data under applicable law. To exercise these rights, contact us at " + PRIVACY_EMAIL + "."),
    ("6. Contact", "For any privacy question, write to " + PRIVACY_EMAIL + "."),
   ]},
+ "news_eyebrow": "", "news_h": "News",
+ "profile_h": "Download our company profile", "profile_p": "Learn about our services, approach and team in a concise PDF profile.",
+ "profile_ar": "Company Profile (Arabic)", "profile_en": "Company Profile (English)", "news_none": "Company news and announcements will be published here.",
  "nf_h": "Page not found",
 },
 }
+
+for _l in T: T[_l]["why"] = [T[_l]["why"][i] for i in (3, 2, 5, 0, 1, 4)]   # display order
 
 # ---------------------------------------------------------------- helpers
 def esc(s): return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
@@ -215,6 +236,7 @@ def org_ld(lang):
          "address": {"@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA"}, "areaServed": "SA"}
     if PHONE_TEL: d["telephone"] = PHONE_TEL
     if CR: d["identifier"] = CR
+    if LINKEDIN_URL: d["sameAs"] = [LINKEDIN_URL]
     return d
 
 def head(lang, key, title, desc, ld=None):
@@ -262,7 +284,7 @@ def header(lang, key):
     links = "".join(f'<a href="{path_for(lang, k)}"' + (' aria-current="page"' if key == k else "") + f'>{n}</a>' for k, n in t["nav"])
     return f'''<a class="skip" href="#main">{t["skip"]}</a>
 <header class="site">
-  <a class="brand" href="{b}" aria-label="{esc(t["brand"])} - {t["home_label"]}"><img src="/assets/img/mark.png" alt="" width="46" height="48"><span class="brand-txt"><span class="brand-name">{esc(t["brand_core"])}</span><span class="brand-co">{t["co"]}</span></span></a>
+  <a class="brand" href="{b}" aria-label="{esc(t["brand"])} - {t["home_label"]}"><img src="/assets/img/logo-h-en.svg" alt="" width="142" height="40"></a>
   <button class="menu-btn" type="button" hidden aria-label="{MENU[lang][0]}" aria-expanded="false" aria-controls="site-nav" data-open="{MENU[lang][0]}" data-close="{MENU[lang][1]}"><span class="bars" aria-hidden="true"></span></button>
   <nav class="main" id="site-nav" aria-label="{'التنقل الرئيسي' if lang == 'ar' else 'Main'}">
     {links}
@@ -270,6 +292,8 @@ def header(lang, key):
   </nav>
 </header>
 '''
+
+LI_SVG = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>'
 
 def contact_items(lang):
     t = T[lang]; L = t["labels"]; rows = [(L["email"], f'<a href="mailto:{EMAIL}"><bdi>{EMAIL}</bdi></a>')]
@@ -281,12 +305,13 @@ def contact_items(lang):
 
 def footer(lang):
     t = T[lang]; L = t["labels"]; b = t["base"]
-    nav = "".join(f'<li><a href="{path_for(lang, k)}">{n}</a></li>' for k, n in t["nav"][:4])
-    contact = "".join(f"<li>{v}</li>" for k, v in contact_items(lang) if k != L["cr"])
+    nav = "".join(f'<li><a href="{path_for(lang, k)}">{n}</a></li>' for k, n in t["nav"][:5])
+    contact = "".join(f"<li>{v}</li>" for k, v in contact_items(lang) if k != L["cr"] and k != t["linkedin"])
+    social = f'<p class="social"><a href="{LINKEDIN_URL}" target="_blank" rel="noopener" aria-label="LinkedIn">{LI_SVG}</a></p>' if LINKEDIN_URL else ""
     return f'''<footer class="site">
   <div class="wrap">
-    <div class="stack g12"><a class="brand" href="{b}"><img src="/assets/img/mark.png" alt="" width="34" height="36" loading="lazy"><span class="brand-txt"><span class="brand-name" style="font-size:20px">{esc(t["brand_core"])}</span><span class="brand-co">{t["co"]}</span></span></a>
-      <p>{L["hq_val"]}</p></div>
+    <div class="stack g12"><a class="brand" href="{b}" aria-label="{esc(t["brand"])}"><img src="/assets/img/logo-h-en.svg" alt="" width="124" height="35" loading="lazy"></a>
+      <p>{L["hq_val"]}</p>{social}</div>
     <div><h2>{L["links_h"]}</h2><ul>{nav}</ul></div>
     <div><h2>{L["contact_h"]}</h2><ul>{contact}</ul></div>
     <div><h2>{L["company_h"]}</h2><ul>{"<li>" + L["cr"] + ": <bdi>" + CR + "</bdi></li>" if CR else ""}<li><a href="{path_for(lang, "privacy")}">{L["privacy"]}</a></li></ul></div>
@@ -318,18 +343,18 @@ def form_html(lang):
 </form>'''
 
 # ---------------------------------------------------------------- pages
-PAGES = ["about", "services", "projects", "team", "contact"]
+PAGES = ["about", "services", "projects", "team", "news", "contact"]
 GO = {
  "ar": {"about": "رؤيتنا ورسالتنا، ولماذا نجمع دعم القرار للمحافظ والمشاريع وGeoAI والذكاء الاصطناعي المؤسسي في فريق واحد.",
         "services": "ثلاث ركائز متكاملة: الذكاء الاصطناعي المؤسسي، والاستشارات في GeoAI، ودعم القرار للمحافظ والمشاريع.",
         "projects": "فئات المشاريع التي نعمل فيها ودورنا في كل منها.",
-        "team": "قيادة الشركة والشبكة الفنية التي تدعمها.",
-        "contact": "اكتب لنا عن مشروعك، ونرد خلال يوم عمل واحد.", "more": "اعرف المزيد", "explore_h": "استكشف إليفانتك"},
+        "team": "قيادة الشركة وشبكة الخبراء التي تدعمها.", "news": "أخبار الشركة والملف التعريفي.",
+        "contact": "اكتب لنا عن مشروعك.", "more": "اعرف المزيد", "explore_h": "استكشف إليفانتك"},
  "en": {"about": "Our vision and mission, and why we bring portfolio and project decision support, GeoAI and enterprise AI into one team.",
         "services": "Three integrated pillars: enterprise AI, GeoAI advisory, and portfolio and project decision support.",
         "projects": "The project categories we work in and our role in each.",
-        "team": "The company's leadership and the technical network behind it.",
-        "contact": "Tell us about your project. We reply within one business day.", "more": "Learn more", "explore_h": "Explore Elevantec"},
+        "team": "The company's leadership and the expert network behind it.", "news": "Company news and our company profile.",
+        "contact": "Tell us about your project.", "more": "Learn more", "explore_h": "Explore Elevantec"},
 }
 
 def sec_about(t):
@@ -354,7 +379,7 @@ def sec_services(t):
 
 def sec_projects(t):
     c = t["proj_cols"]
-    proj = "".join(f'<div class="card"><p class="eyebrow">{esc(a)}</p><h2>{esc(b)}</h2><p><strong>{c[2]}:</strong> {esc(r)}</p></div>' for a, b, r in t["proj"])
+    proj = "".join(f'<div class="card"><p class="eyebrow">{esc(a)}</p><h2>{esc(b)}</h2><p>{esc(r)}</p></div>' for a, b, r in t["proj"])
     return f'<section><div class="wrap stack g48"><p class="muted" style="max-width:72ch">{t["proj_note"]}</p><div class="cards">{proj}</div></div></section>\n'
 
 def sec_team(t):
@@ -364,7 +389,20 @@ def sec_team(t):
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{EMAIL}"><bdi>{EMAIL}</bdi></a></li>')
         team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div>\n'
-    return f'<section><div class="wrap stack g48"><div class="cards">{team}</div><p class="muted" style="max-width:70ch">{t["network"]}</p></div></section>\n'
+    sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="eyebrow">{esc(r)}</p><p class="loc">{esc(loc)}</p><p class="muted">{esc(d)}</p></div>' for n, r, loc, d in t["sme"])
+    it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
+    return f'''<section><div class="wrap stack g48"><div class="cards">{team}</div></div></section>
+<section class="alt"><div class="wrap stack g48"><div class="stack g12" style="max-width:70ch"><p class="eyebrow">{t["sme_eyebrow"]}</p><h2>{t["sme_h"]}</h2><p class="muted">{t["network"]}</p></div><div class="cards">{sme}</div></div></section>
+<section><div class="wrap">{it}</div></section>
+'''
+
+PROFILE = {"ar": "/files/Elevantec-Company-Profile-AR.pdf", "en": "/files/Elevantec-Company-Profile-EN.pdf"}
+def sec_news(lang, t):
+    first, second = (("ar", "profile_ar"), ("en", "profile_en")) if lang == "ar" else (("en", "profile_en"), ("ar", "profile_ar"))
+    btns = "".join(f'<a class="btn{" gold" if i == 0 else ""}" href="{PROFILE[l]}" download>{t[k]}</a>' for i, (l, k) in enumerate((first, second)))
+    return f'''<section><div class="wrap stack g48"><div class="card profile"><h2>{t["profile_h"]}</h2><p class="muted">{t["profile_p"]}</p><div class="btns">{btns}</div></div>
+<p class="muted">{t["news_none"]}</p></div></section>
+'''
 
 def sec_contact(lang, t):
     rows = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in contact_items(lang))
@@ -376,22 +414,22 @@ def sec_contact(lang, t):
 '''
 
 HEAD = {"about": ("about_eyebrow", "about_h"), "services": ("svc_eyebrow", "svc_h"), "projects": ("proj_eyebrow", "proj_h"),
-        "team": ("team_eyebrow", "team_h"), "contact": ("contact_eyebrow", "contact_h")}
+        "team": ("team_eyebrow", "team_h"), "news": ("news_eyebrow", "news_h"), "contact": ("contact_eyebrow", "contact_h")}
 SUB = {"services": "svc_h"}
 
 def page(lang, key):
     t = T[lang]; eb, hh = HEAD[key]
     sec = {"about": lambda: sec_about(t), "services": lambda: sec_services(t), "projects": lambda: sec_projects(t),
-           "team": lambda: sec_team(t), "contact": lambda: sec_contact(lang, t)}[key]()
+           "team": lambda: sec_team(t), "news": lambda: sec_news(lang, t), "contact": lambda: sec_contact(lang, t)}[key]()
     title = f'{(t["nav_services"] if key in SUB else t[hh])} | {t["brand"]}'
     desc = {"about": t["vision"], "services": t["gap"][:0] + GO[lang]["services"], "projects": GO[lang]["projects"],
-            "team": GO[lang]["team"], "contact": t["contact_p"]}[key]
+            "team": GO[lang]["team"], "news": GO[lang]["news"], "contact": t["contact_p"]}[key]
     crumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": t["home_label"], "item": url(lang, "home")},
         {"@type": "ListItem", "position": 2, "name": t["nav_services"] if key in SUB else t[hh], "item": url(lang, key)}]}
     body = f'''<body>
 {header(lang, key)}<main id="main">
-<section class="page-hero"><div class="wrap stack g20"><nav class="crumbs" aria-label="breadcrumb"><a href="{t["base"]}">{t["home_label"]}</a><span aria-hidden="true">/</span><span>{t["nav_services"] if key in SUB else t[hh]}</span></nav><p class="eyebrow">{t[eb]}</p><h1>{t["nav_services"] if key in SUB else t[hh]}</h1>{('<p class="lead">' + t[SUB[key]] + '</p>') if key in SUB else ''}</div></section>
+<section class="page-hero"><div class="wrap stack g20"><nav class="crumbs" aria-label="breadcrumb"><a href="{t["base"]}">{t["home_label"]}</a><span aria-hidden="true">/</span><span>{t["nav_services"] if key in SUB else t[hh]}</span></nav>{('<p class="eyebrow">' + t[eb] + '</p>') if t[eb] else ''}<h1>{t["nav_services"] if key in SUB else t[hh]}</h1>{('<p class="lead">' + t[SUB[key]] + '</p>') if key in SUB else ''}</div></section>
 {sec}</main>
 {footer(lang)}<script src="{JS}" defer></script>
 </body></html>
@@ -402,8 +440,8 @@ def home(lang):
     t = T[lang]; g = GO[lang]
     arrow = "←" if lang == "ar" else "→"
     trust = "".join("<li>" + esc(x).replace("PfMP · PgMP · PMP", "<bdi>PfMP · PgMP · PMP</bdi>") + "</li>" for x in t["trust"])
-    logo = f"/assets/img/logo-{lang}.png"
-    dims = {"ar": (440, 167), "en": (440, 125)}[lang]
+    logo = "/assets/img/logo-en.png"   # same English logo on both language versions
+    dims = (440, 125)
     names = dict(t["nav"])
     cards = "".join(f'<div class="card link"><h3>{names[k]}</h3><p>{g[k]}</p><a class="more stretch" href="{path_for(lang, k)}">{g["more"]} {arrow}</a></div>' for k in PAGES[:4])
     body = f'''<body>
@@ -411,7 +449,6 @@ def home(lang):
 <section class="hero">
   <div class="wrap cols" style="align-items:center">
     <div class="stack g28">
-      <p class="eyebrow">{t["eyebrow"]}</p>
       <h1>{t["h1"]}</h1>
       <p class="lead">{t["lead"]}</p>
       <div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta1"]}</a><a class="btn" href="{path_for(lang, "services")}">{t["cta2"]}</a></div>
@@ -488,5 +525,7 @@ if __name__ == "__main__":
   Content-Security-Policy: default-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; script-src-attr 'none'; base-uri 'self'; form-action 'self' mailto: https://formspree.io https://api.web3forms.com; connect-src 'self' https://formspree.io https://api.web3forms.com; frame-ancestors 'none'; object-src 'none'
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+/files/*
+  Cache-Control: public, max-age=3600
 """)
     print("built")
