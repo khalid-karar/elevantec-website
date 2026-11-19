@@ -90,9 +90,12 @@ T = {
  "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "خبرة تزيد على 16 عامًا في القطاعين الخاص والعام في الولايات المتحدة، في تسليم برمجيات المؤسسات والتحول الرقمي. يقود عمليات الشركة وشراكاتها الدولية في المملكة."),
           ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP وPMOCP وPBA في إدارة المحافظ والبرامج والمشاريع، وخبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية.")],
  "sme_h": "نخبة الخبراء المتخصصين", "sme_eyebrow": "شبكة الخبراء",
- "sme": [("غازي عمر", "مستشار البنية المعمارية وإنترنت الأشياء", "فرجينيا، الولايات المتحدة", "خبير في هندسة المؤسسات وحلول إنترنت الأشياء، بخبرة تمتد لعقود في تصميم أنظمة قابلة للتوسع. متخصص في دمج التقنيات الناشئة داخل البيئات الحرجة."),
-         ("محمد روب", "مستشار GeoAI", "لندن، المملكة المتحدة", "متخصص متمرس في الذكاء الجيومكاني وتحليلات الاستشعار عن بعد. ابتكر تطبيقات GeoAI في الزراعة والمراقبة البيئية والتخطيط العمراني."),
-         ("وليد عبدالله", "مستشار الأمن السيبراني", "فرجينيا، الولايات المتحدة", "مهندس أمني متخصص في تطبيق نموذج انعدام الثقة (Zero Trust) واختبار الاختراق. خبرة واسعة في حماية البنية التحتية الحرجة وبيئات البيانات الحساسة.")],
+ "sme": [("الذكاء الاصطناعي", "نماذج وتطبيقات الذكاء الاصطناعي المؤسسي، من التعلّم الآلي إلى النماذج اللغوية، مصممة لتعمل داخل ضوابط الأمن والامتثال لدى العميل."),
+         ("GeoAI والاستشعار عن بعد", "تحليلات الصور الجيومكانية وبيانات الأقمار الصناعية ونظم المعلومات الجغرافية، لتحويل البيانات المكانية إلى رؤى قابلة للتنفيذ."),
+         ("تطوير البرمجيات", "مطورون متخصصون في التطبيقات المتكاملة والواجهات والخدمات الخلفية، يسلّمون منصات جاهزة للإنتاج وقابلة للتوسع."),
+         ("البنية المعمارية والحوسبة السحابية", "تصميم معماريات المؤسسات وحلول السحابة وإنترنت الأشياء، بما يدمج التقنيات الناشئة في بيئات حيوية."),
+         ("الأمن السيبراني", "تطبيق نموذج انعدام الثقة (Zero Trust) واختبار الاختراق وحماية البنية التحتية والبيانات الحساسة."),
+         ("تطوير الأعمال", "استراتيجية الدخول إلى السوق وتحديد الفرص وبناء الشراكات، لدعم نمو الشركات التقنية والمؤسسية في المملكة.")],
  "it_h": "الدعم الفني", "it_p": "للمساعدة في أي استفسار تقني، تواصل معنا على",
  "network": "يقود فريقنا الأساسي كل مشروع، ويُنفَّذ بدعم مهندسين ومحللين متخصصين في الذكاء الاصطناعي وتطوير التطبيقات المتكاملة والاستشعار عن بعد ونظم المعلومات الجغرافية، وخبراء في البيئة والبنية التحتية.",
  "why_eyebrow": "لماذا إليفانتك", "why_h": "الميزة السعودية",
@@ -179,9 +182,12 @@ T = {
  "team": [("Eng. Khalid Abdelrahman", "CEO", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
           ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
  "sme_h": "SME Pool", "sme_eyebrow": "Expert network",
- "sme": [("Ghazi Omar", "Architecture & IoT Advisor", "Virginia, USA", "Expert in enterprise architecture and IoT solutions with decades of experience designing scalable systems. Specializes in integrating emerging technologies into mission-critical environments."),
-         ("Mohamed Rob", "GeoAI Advisor", "London, UK", "Seasoned specialist in geospatial intelligence and remote sensing analytics. Has pioneered innovative GeoAI applications for agriculture, environmental monitoring and urban planning."),
-         ("Walid Abdalla", "Cybersecurity Advisor", "Virginia, USA", "Security architect specializing in Zero Trust implementations and penetration testing. Extensive experience securing critical infrastructure and sensitive data environments.")],
+ "sme": [("Artificial intelligence", "Enterprise AI models and applications, from machine learning to language models, built to run inside the client’s security and compliance controls."),
+         ("GeoAI and remote sensing", "Geospatial imagery analytics, satellite data and GIS, turning spatial data into insight that can be acted on."),
+         ("Software development", "Specialist full-stack engineers delivering production-ready, scalable platforms, from interfaces to back-end services."),
+         ("Architecture and cloud", "Enterprise architecture, cloud and IoT solutions that integrate emerging technologies into mission-critical environments."),
+         ("Cybersecurity", "Zero Trust implementation, penetration testing and protection of critical infrastructure and sensitive data."),
+         ("Business development", "Go-to-market strategy, opportunity identification and partnership building to support growth in the Kingdom.")],
  "it_h": "IT support", "it_p": "For help with any technical inquiry, please contact us at",
  "network": "Every engagement is led by our core team and delivered with specialist engineers and analysts in AI, full-stack development, GIS and remote sensing, and infrastructure and environmental advisory.",
  "why_eyebrow": "Why Elevantec", "why_h": "The Saudi advantage",
@@ -399,7 +405,7 @@ def sec_team(t):
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
         team += f'<div class="card person">{photo}<div class="pbody"><p class="eyebrow">{esc(r)}</p><h2>{esc(n)}</h2><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
-    sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="eyebrow">{esc(r)}</p><p class="loc">{esc(loc)}</p><p class="muted">{esc(d)}</p></div>' for n, r, loc, d in t["sme"])
+    sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="muted">{esc(d)}</p></div>' for n, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
     return f'''<section><div class="wrap stack g48"><div class="people">{team}</div></div></section>
 <section class="alt"><div class="wrap stack g48"><div class="stack g12" style="max-width:70ch"><p class="eyebrow">{t["sme_eyebrow"]}</p><h2>{t["sme_h"]}</h2><p class="muted">{t["network"]}</p></div><div class="cards">{sme}</div></div></section>
