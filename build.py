@@ -386,14 +386,14 @@ def sec_team(t):
     PHOTOS = ["khalid", "mohammed"]
     for i, (n, r, note) in enumerate(t["team"]):
         em = PERSONAL[i] if i < len(PERSONAL) else EMAIL
-        photo = f'<img class="avatar" src="/assets/img/team/{PHOTOS[i]}.jpg" alt="{esc(n)}" width="120" height="120" loading="lazy">' if i < len(PHOTOS) else ""
+        photo = f'<img class="avatar" src="/assets/img/team/{PHOTOS[i]}.jpg" alt="{esc(n)}" width="320" height="320" loading="lazy">' if i < len(PHOTOS) else ""
         lines = []
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
-        team += f'<div class="card">{photo}<h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div>\n'
+        team += f'<div class="card person">{photo}<div class="pbody"><p class="eyebrow">{esc(r)}</p><h2>{esc(n)}</h2><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="eyebrow">{esc(r)}</p><p class="loc">{esc(loc)}</p><p class="muted">{esc(d)}</p></div>' for n, r, loc, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
-    return f'''<section><div class="wrap stack g48"><div class="cards">{team}</div></div></section>
+    return f'''<section><div class="wrap stack g48"><div class="people">{team}</div></div></section>
 <section class="alt"><div class="wrap stack g48"><div class="stack g12" style="max-width:70ch"><p class="eyebrow">{t["sme_eyebrow"]}</p><h2>{t["sme_h"]}</h2><p class="muted">{t["network"]}</p></div><div class="cards">{sme}</div></div></section>
 <section><div class="wrap">{it}</div></section>
 '''
