@@ -42,7 +42,7 @@ T = {
 "ar": {
  "dir": "rtl", "lang": "ar", "base": "/", "other": "en", "other_label": "English", "locale": "ar_SA", "other_locale": "en_US",
  "brand": "شركة إليفانتك", "brand_core": "إليفانتك", "co": "شركة", "skip": "انتقل إلى المحتوى", "home_label": "الرئيسية",
- "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("news", "الأخبار"), ("contact", "تواصل معنا")],
+ "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("partners", "الشركاء"), ("news", "الأخبار"), ("contact", "تواصل معنا")],
  "nav_services": "خدماتنا",
  "title": "شركة إليفانتك | الذكاء الاصطناعي المؤسسي والذكاء الجيومكاني ودعم القرار للمحافظ والمشاريع في الرياض",
  "desc": "شركة إليفانتك شركة سعودية في الرياض تجمع حلول الذكاء الاصطناعي المؤسسي، والذكاء الاصطناعي الجيومكاني (GeoAI)، ودعم القرار للمحافظ والمشاريع لدعم برامج التحول الرقمي والبيئة في رؤية 2030.",
@@ -51,7 +51,7 @@ T = {
  "lead": "الذكاء الاصطناعي المؤسسي والجيومكاني (GeoAI) ودعم القرار للمحافظ والمشاريع للجهات الحكومية والشركات والمنشآت الصغيرة والمتوسطة والمكاتب المهنية. نحوّل التعقيد إلى وضوح، والوضوح إلى أثر مستدام.",
  "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار إليفانتك",
  "trust": ["شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
- "partners_h": "شركاؤنا", "partner_role": "شريك استراتيجي", "partner_name": "Accelerate Consulting", "partner_p": "تحالف رائد في الاستشارات الإدارية والتأكيد المهني، يمكّن المؤسسات من خلال الرؤى الاستراتيجية وتميّز الحوكمة والحلول المبتكرة.", "partner_p2": "بنينا معًا منصة Accelerat 360.", "partner_link": "زيارة الموقع",
+ "partners_eyebrow": "", "partners_h": "الشركاء", "partner_role": "شريك استراتيجي", "partner_name": "Accelerate Consulting", "partner_p": "تحالف رائد في الاستشارات الإدارية والتأكيد المهني، يمكّن المؤسسات من خلال الرؤى الاستراتيجية وتميّز الحوكمة والحلول المبتكرة.", "partner_p2": "بنينا معًا منصة Accelerat 360.", "partner_link": "زيارة الموقع",
  "about_eyebrow": "عن الشركة", "about_h": "الرؤية والرسالة",
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
  "mission_h": "رسالتنا", "mission": "نطوّر وننشر أنظمة ذكاء الأعمال بالذكاء الاصطناعي وحلول GeoAI وأنظمة دعم قرار للمحافظ والمشاريع، لتساعد الجهات السعودية على التعامل مع بياناتها بوصفها أصلًا استراتيجيًا. وبدمج الهندسة المتقدمة للذكاء الاصطناعي المؤسسي مع GeoAI وممارسات إدارة المحافظ والبرامج والمشاريع المعتمدة، نحوّل البيانات المعقدة إلى معلومات جاهزة لمجلس الإدارة.",
@@ -134,7 +134,7 @@ T = {
 "en": {
  "dir": "ltr", "lang": "en", "base": "/en/", "other": "ar", "other_label": "العربية", "locale": "en_US", "other_locale": "ar_SA",
  "brand": "Elevantec Company", "brand_core": "elevantec", "co": "Company", "skip": "Skip to content", "home_label": "Home",
- "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("news", "News"), ("contact", "Contact")],
+ "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("partners", "Partners"), ("news", "News"), ("contact", "Contact")],
  "nav_services": "Services",
  "title": "Elevantec Company | Enterprise AI, GeoAI and Portfolio and Project Decision Support in Riyadh",
  "desc": "Elevantec Company is a Saudi company in Riyadh combining enterprise AI deployment, GeoAI and portfolio and project decision support for Vision 2030 digital transformation and environmental programs.",
@@ -143,7 +143,7 @@ T = {
  "lead": "Enterprise AI, GeoAI and portfolio and project decision support for government, corporates, SMEs and professional firms. We turn complexity into clarity, and clarity into sustainable impact.",
  "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Elevantec logo",
  "trust": ["Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
- "partners_h": "Our partners", "partner_role": "Strategic partner", "partner_name": "Accelerate Consulting", "partner_p": "A premier business consulting and assurance alliance empowering organizations with strategic insights, governance excellence, and innovative solutions.", "partner_p2": "Together we built Accelerat 360.", "partner_link": "Visit website",
+ "partners_eyebrow": "", "partners_h": "Partners", "partner_role": "Strategic partner", "partner_name": "Accelerate Consulting", "partner_p": "A premier business consulting and assurance alliance empowering organizations with strategic insights, governance excellence, and innovative solutions.", "partner_p2": "Together we built Accelerat 360.", "partner_link": "Visit website",
  "about_eyebrow": "About", "about_h": "Vision and mission",
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
  "mission_h": "Our mission", "mission": "We develop and deploy AI business-intelligence systems, GeoAI solutions and decision-support systems for portfolios and projects, helping Saudi organizations treat data as a strategic asset. By combining enterprise-grade AI engineering, GeoAI, and certified portfolio, program and project management practice, we turn complex data into boardroom-ready intelligence.",
@@ -311,7 +311,7 @@ def contact_items(lang):
 
 def footer(lang):
     t = T[lang]; L = t["labels"]; b = t["base"]
-    nav = "".join(f'<li><a href="{path_for(lang, k)}">{n}</a></li>' for k, n in t["nav"][:5])
+    nav = "".join(f'<li><a href="{path_for(lang, k)}">{n}</a></li>' for k, n in t["nav"][:-1])
     contact = "".join(f"<li>{v}</li>" for k, v in contact_items(lang) if k != L["cr"] and k != t["linkedin"])
     social = f'<p class="social"><a href="{LINKEDIN_URL}" target="_blank" rel="noopener" aria-label="LinkedIn">{LI_SVG}</a></p>' if LINKEDIN_URL else ""
     return f'''<footer class="site">
@@ -349,22 +349,22 @@ def form_html(lang):
 </form>'''
 
 # ---------------------------------------------------------------- pages
-PAGES = ["about", "services", "projects", "team", "news", "contact"]
+PAGES = ["about", "services", "projects", "team", "partners", "news", "contact"]
 GO = {
  "ar": {"about": "رؤيتنا ورسالتنا، ولماذا نجمع دعم القرار للمحافظ والمشاريع وGeoAI والذكاء الاصطناعي المؤسسي في فريق واحد.",
         "services": "ثلاث ركائز متكاملة: الذكاء الاصطناعي المؤسسي، والاستشارات في GeoAI، ودعم القرار للمحافظ والمشاريع.",
         "projects": "فئات المشاريع التي نعمل فيها ودورنا في كل منها.",
-        "team": "قيادة الشركة وشبكة الخبراء التي تدعمها.", "news": "أخبار الشركة والملف التعريفي.",
+        "team": "قيادة الشركة وشبكة الخبراء التي تدعمها.", "news": "أخبار الشركة والملف التعريفي.", "partners": "الشركات التي نعمل معها لتقديم حلول متكاملة.",
         "contact": "اكتب لنا عن مشروعك.", "more": "اعرف المزيد", "explore_h": "استكشف إليفانتك"},
  "en": {"about": "Our vision and mission, and why we bring portfolio and project decision support, GeoAI and enterprise AI into one team.",
         "services": "Three integrated pillars: enterprise AI, GeoAI advisory, and portfolio and project decision support.",
         "projects": "The project categories we work in and our role in each.",
-        "team": "The company's leadership and the expert network behind it.", "news": "Company news and our company profile.",
+        "team": "The company's leadership and the expert network behind it.", "news": "Company news and our company profile.", "partners": "The companies we work with to deliver integrated solutions.",
         "contact": "Tell us about your project.", "more": "Learn more", "explore_h": "Explore Elevantec"},
 }
 
 def sec_partners(t):
-    return f'''<section class="partners"><div class="wrap stack g28"><h2 style="font-size:28px">{t["partners_h"]}</h2>
+    return f'''<section class="partners"><div class="wrap stack g28">
 <div class="card partner"><div class="plogo"><img src="/assets/img/accelerat-logo.png" alt="Accelerat" width="1800" height="265" loading="lazy"></div>
 <div class="pbody"><p class="eyebrow">{t["partner_role"]}</p><h3><bdi>{t["partner_name"]}</bdi></h3><p class="muted">{t["partner_p"]} {t["partner_p2"]}</p><a class="more" href="https://accelerateconsulting.net/" target="_blank" rel="noopener">{t["partner_link"]} ↗</a></div></div></div></section>
 '''
@@ -430,16 +430,16 @@ def sec_contact(lang, t):
 '''
 
 HEAD = {"about": ("about_eyebrow", "about_h"), "services": ("svc_eyebrow", "svc_h"), "projects": ("proj_eyebrow", "proj_h"),
-        "team": ("team_eyebrow", "team_h"), "news": ("news_eyebrow", "news_h"), "contact": ("contact_eyebrow", "contact_h")}
+        "team": ("team_eyebrow", "team_h"), "partners": ("partners_eyebrow", "partners_h"), "news": ("news_eyebrow", "news_h"), "contact": ("contact_eyebrow", "contact_h")}
 SUB = {"services": "svc_h"}
 
 def page(lang, key):
     t = T[lang]; eb, hh = HEAD[key]
     sec = {"about": lambda: sec_about(t), "services": lambda: sec_services(t), "projects": lambda: sec_projects(t),
-           "team": lambda: sec_team(t), "news": lambda: sec_news(lang, t), "contact": lambda: sec_contact(lang, t)}[key]()
+           "team": lambda: sec_team(t), "partners": lambda: sec_partners(t), "news": lambda: sec_news(lang, t), "contact": lambda: sec_contact(lang, t)}[key]()
     title = f'{(t["nav_services"] if key in SUB else t[hh])} | {t["brand"]}'
     desc = {"about": t["vision"], "services": t["gap"][:0] + GO[lang]["services"], "projects": GO[lang]["projects"],
-            "team": GO[lang]["team"], "news": GO[lang]["news"], "contact": t["contact_p"]}[key]
+            "team": GO[lang]["team"], "partners": GO[lang]["partners"], "news": GO[lang]["news"], "contact": t["contact_p"]}[key]
     crumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": t["home_label"], "item": url(lang, "home")},
         {"@type": "ListItem", "position": 2, "name": t["nav_services"] if key in SUB else t[hh], "item": url(lang, key)}]}
@@ -474,7 +474,6 @@ def home(lang):
 </section>
 <section class="trustbar"><div class="wrap"><ul>{trust}</ul></div></section>
 <section><div class="wrap stack g48"><h2>{g["explore_h"]}</h2><div class="cards">{cards}</div></div></section>
-{sec_partners(t)}
 <section class="alt cta"><div class="wrap"><div class="stack g12"><h2>{t["contact_h"]}</h2><p class="muted">{g["contact"]}</p></div><div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta1"]}</a></div></div></section>
 </main>
 {footer(lang)}<script src="{JS}" defer></script>
