@@ -91,10 +91,11 @@ T = {
           ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP وPMOCP وPBA في إدارة المحافظ والبرامج والمشاريع، وخبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية.")],
  "sme_h": "نخبة الخبراء المتخصصين", "sme_eyebrow": "",
  "sme": [("الذكاء الاصطناعي", "نماذج وتطبيقات الذكاء الاصطناعي المؤسسي، من التعلّم الآلي إلى النماذج اللغوية، مصممة لتعمل داخل ضوابط الأمن والامتثال لدى العميل."),
-         ("GeoAI والاستشعار عن بعد", "تحليلات الصور الجيومكانية وبيانات الأقمار الصناعية ونظم المعلومات الجغرافية، لتحويل البيانات المكانية إلى رؤى قابلة للتنفيذ."),
+         ("GeoAI ونظم المعلومات الجغرافية والاستشعار عن بعد", "تحليلات الصور الجيومكانية وبيانات الأقمار الصناعية ونظم المعلومات الجغرافية (GIS)، لتحويل البيانات المكانية إلى رؤى قابلة للتنفيذ."),
          ("تطوير البرمجيات", "مطورون متخصصون في التطبيقات المتكاملة والواجهات والخدمات الخلفية، يسلّمون منصات جاهزة للإنتاج وقابلة للتوسع."),
          ("البنية المعمارية والحوسبة السحابية", "تصميم معماريات المؤسسات وحلول السحابة وإنترنت الأشياء، بما يدمج التقنيات الناشئة في بيئات حيوية."),
          ("الأمن السيبراني", "تطبيق نموذج انعدام الثقة (Zero Trust) واختبار الاختراق وحماية البنية التحتية والبيانات الحساسة."),
+         ("إدارة المشاريع والبرامج", "إدارة المحافظ والبرامج والمشاريع وفق أفضل الممارسات المعتمدة، من التخطيط والحوكمة إلى التسليم وقياس النتائج."),
          ("تطوير الأعمال", "استراتيجية الدخول إلى السوق وتحديد الفرص وبناء الشراكات، لدعم نمو الشركات التقنية والمؤسسية في المملكة.")],
  "it_h": "الدعم الفني", "it_p": "للمساعدة في أي استفسار تقني، تواصل معنا على",
  "network": "يقود فريقنا الأساسي كل مشروع، ويُنفَّذ بدعم مهندسين ومحللين متخصصين في الذكاء الاصطناعي وتطوير التطبيقات المتكاملة والاستشعار عن بعد ونظم المعلومات الجغرافية، وخبراء في البيئة والبنية التحتية.",
@@ -183,10 +184,11 @@ T = {
           ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
  "sme_h": "SMEs Pool", "sme_eyebrow": "",
  "sme": [("Artificial intelligence", "Enterprise AI models and applications, from machine learning to language models, built to run inside the client’s security and compliance controls."),
-         ("GeoAI and remote sensing", "Geospatial imagery analytics, satellite data and GIS, turning spatial data into insight that can be acted on."),
+         ("GeoAI, GIS and remote sensing", "Geospatial imagery analytics, satellite data and GIS, turning spatial data into insight that can be acted on."),
          ("Software development", "Specialist full-stack engineers delivering production-ready, scalable platforms, from interfaces to back-end services."),
          ("Architecture and cloud", "Enterprise architecture, cloud and IoT solutions that integrate emerging technologies into mission-critical environments."),
          ("Cybersecurity", "Zero Trust implementation, penetration testing and protection of critical infrastructure and sensitive data."),
+         ("Project and program management", "Portfolio, program and project management aligned with recognized best practices, from planning and governance through delivery and benefits tracking."),
          ("Business development", "Go-to-market strategy, opportunity identification and partnership building to support growth in the Kingdom.")],
  "it_h": "IT support", "it_p": "For help with any technical inquiry, please contact us at",
  "network": "Every engagement is led by our core team and delivered with specialist engineers and analysts in AI, full-stack development, GIS and remote sensing, and infrastructure and environmental advisory.",
@@ -408,7 +410,7 @@ def sec_team(t):
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="muted">{esc(d)}</p></div>' for n, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
     return f'''<section><div class="wrap stack g48"><div class="people">{team}</div></div></section>
-<section class="alt"><div class="wrap stack g48"><div class="stack g12" style="max-width:70ch">{("<p class=\"eyebrow\">" + t["sme_eyebrow"] + "</p>") if t["sme_eyebrow"] else ""}<h2>{t["sme_h"]}</h2><p class="muted">{t["network"]}</p></div><div class="cards">{sme}</div></div></section>
+<section class="alt"><div class="wrap stack g48"><div class="stack g12" style="max-width:70ch">{("<p class=\"eyebrow\">" + t["sme_eyebrow"] + "</p>") if t["sme_eyebrow"] else ""}<h2>{t["sme_h"]}</h2><p class="muted">{t["network"]}</p></div><div class="cards sme">{sme}</div></div></section>
 <section><div class="wrap">{it}</div></section>
 '''
 
