@@ -51,7 +51,7 @@ T = {
  "lead": "الذكاء الاصطناعي المؤسسي والجيومكاني (GeoAI) ودعم القرار للمحافظ والمشاريع للجهات الحكومية والشركات والمنشآت الصغيرة والمتوسطة والمكاتب المهنية. نحوّل التعقيد إلى وضوح، والوضوح إلى أثر مستدام.",
  "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار إليفانتك",
  "trust": ["شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
- "partners_eyebrow": "", "partners_h": "الشركاء", "partner_role": "شريك استراتيجي", "partner_name": "Accelerate Consulting", "partner_p": "تحالف رائد في الاستشارات الإدارية والتأكيد المهني، يمكّن المؤسسات من خلال الرؤى الاستراتيجية وتميّز الحوكمة والحلول المبتكرة.", "partner_p2": "بنينا معًا منصة Accelerat 360.", "partner_link": "زيارة الموقع",
+ "partners_eyebrow": "", "partners_h": "الشركاء", "partner_role": "شريك استراتيجي", "partner_name": "Accelerate Consulting", "partner_p": "تحالف رائد في الاستشارات الإدارية والتأكيد المهني، يمكّن المؤسسات من خلال الرؤى الاستراتيجية وتميّز الحوكمة والحلول المبتكرة.", "partner_link": "زيارة الموقع",
  "about_eyebrow": "عن الشركة", "about_h": "الرؤية والرسالة",
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
  "mission_h": "رسالتنا", "mission": "نطوّر وننشر أنظمة ذكاء الأعمال بالذكاء الاصطناعي وحلول GeoAI وأنظمة دعم قرار للمحافظ والمشاريع، لتساعد الجهات السعودية على التعامل مع بياناتها بوصفها أصلًا استراتيجيًا. وبدمج الهندسة المتقدمة للذكاء الاصطناعي المؤسسي مع GeoAI وممارسات إدارة المحافظ والبرامج والمشاريع المعتمدة، نحوّل البيانات المعقدة إلى معلومات جاهزة لمجلس الإدارة.",
@@ -143,7 +143,7 @@ T = {
  "lead": "Enterprise AI, GeoAI and portfolio and project decision support for government, corporates, SMEs and professional firms. We turn complexity into clarity, and clarity into sustainable impact.",
  "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Elevantec logo",
  "trust": ["Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
- "partners_eyebrow": "", "partners_h": "Partners", "partner_role": "Strategic partner", "partner_name": "Accelerate Consulting", "partner_p": "A premier business consulting and assurance alliance empowering organizations with strategic insights, governance excellence, and innovative solutions.", "partner_p2": "Together we built Accelerat 360.", "partner_link": "Visit website",
+ "partners_eyebrow": "", "partners_h": "Partners", "partner_role": "Strategic partner", "partner_name": "Accelerate Consulting", "partner_p": "A premier business consulting and assurance alliance empowering organizations with strategic insights, governance excellence, and innovative solutions.", "partner_link": "Visit website",
  "about_eyebrow": "About", "about_h": "Vision and mission",
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
  "mission_h": "Our mission", "mission": "We develop and deploy AI business-intelligence systems, GeoAI solutions and decision-support systems for portfolios and projects, helping Saudi organizations treat data as a strategic asset. By combining enterprise-grade AI engineering, GeoAI, and certified portfolio, program and project management practice, we turn complex data into boardroom-ready intelligence.",
@@ -366,7 +366,7 @@ GO = {
 def sec_partners(t):
     return f'''<section class="partners"><div class="wrap stack g28">
 <div class="card partner"><div class="plogo"><img src="/assets/img/accelerat-logo.png" alt="Accelerat" width="1800" height="265" loading="lazy"></div>
-<div class="pbody"><p class="eyebrow">{t["partner_role"]}</p><h3><bdi>{t["partner_name"]}</bdi></h3><p class="muted">{t["partner_p"]} {t["partner_p2"]}</p><a class="more" href="https://accelerateconsulting.net/" target="_blank" rel="noopener">{t["partner_link"]} ↗</a></div></div></div></section>
+<div class="pbody"><p class="eyebrow">{t["partner_role"]}</p><h3><bdi>{t["partner_name"]}</bdi></h3><p class="muted">{t["partner_p"]}</p><a class="more" href="https://accelerateconsulting.net/" target="_blank" rel="noopener">{t["partner_link"]} ↗</a></div></div></div></section>
 '''
 
 def sec_about(t):
