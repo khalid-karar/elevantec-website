@@ -449,3 +449,12 @@ html[dir="rtl"] .card.person{padding:36px 36px 36px 44px}
 .card.person .muted{font-size:18px;max-width:62ch}
 .card.person ul{margin-top:6px}
 @media(max-width:820px){.card.person{grid-template-columns:1fr;gap:26px;padding:28px 24px}html[dir="rtl"] .card.person{padding:28px 24px}.card.person .avatar{width:100%;max-width:360px;height:auto;aspect-ratio:1}}
+
+/* partners */
+.partners{padding-top:0}
+.card.partner{display:grid;grid-template-columns:minmax(240px,360px) 1fr;gap:44px;align-items:center;padding:36px}
+.card.partner .plogo{background:#fff;padding:26px 28px;display:flex;align-items:center;justify-content:center}
+.card.partner .plogo img{display:block;width:100%;height:auto}
+.card.partner .pbody{display:flex;flex-direction:column;gap:12px}
+.card.partner h3{font-size:30px}
+@media(max-width:820px){.card.partner{grid-template-columns:1fr;gap:24px;padding:24px}}
