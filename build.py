@@ -359,7 +359,7 @@ GO = {
 
 def sec_partners(t):
     return f'''<section class="partners"><div class="wrap stack g28"><h2 style="font-size:28px">{t["partners_h"]}</h2>
-<div class="card partner"><div class="plogo"><img src="/assets/img/accelerat-logo.png" alt="Accelerat" width="360" height="53" loading="lazy"></div>
+<div class="card partner"><div class="plogo"><img src="/assets/img/accelerat-logo.png" alt="Accelerat" width="1800" height="265" loading="lazy"></div>
 <div class="pbody"><p class="eyebrow">{t["partner_role"]}</p><h3><bdi>{t["partner_name"]}</bdi></h3><p class="muted">{t["partner_p"]} {t["partner_p2"]}</p><a class="more" href="https://accelerateconsulting.net/" target="_blank" rel="noopener">{t["partner_link"]} ↗</a></div></div></div></section>
 '''
 
