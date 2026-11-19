@@ -174,7 +174,7 @@ T = {
           ("Digital transformation", "Digital transformation programs for companies", "Advisory and delivery support"),
           ("Portfolio and project decision support", "Decision-support dashboards for portfolios and projects", "System design and dashboard build")],
  "team_eyebrow": "", "team_h": "Team",
- "team": [("Eng. Khalid Abdelrahman", "Chief Executive Officer", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
+ "team": [("Eng. Khalid Abdelrahman", "CEO", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
           ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
  "sme_h": "SME Pool", "sme_eyebrow": "Expert network",
  "sme": [("Ghazi Omar", "Architecture & IoT Advisor", "Virginia, USA", "Expert in enterprise architecture and IoT solutions with decades of experience designing scalable systems. Specializes in integrating emerging technologies into mission-critical environments."),
