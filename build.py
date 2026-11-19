@@ -181,7 +181,7 @@ T = {
  "team_eyebrow": "", "team_h": "Team",
  "team": [("Eng. Khalid Abdelrahman", "CEO", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
           ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
- "sme_h": "SME Pool", "sme_eyebrow": "Expert network",
+ "sme_h": "SMEs Pool", "sme_eyebrow": "Expert network",
  "sme": [("Artificial intelligence", "Enterprise AI models and applications, from machine learning to language models, built to run inside the client’s security and compliance controls."),
          ("GeoAI and remote sensing", "Geospatial imagery analytics, satellite data and GIS, turning spatial data into insight that can be acted on."),
          ("Software development", "Specialist full-stack engineers delivering production-ready, scalable platforms, from interfaces to back-end services."),
