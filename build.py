@@ -379,7 +379,7 @@ def sec_services(t):
 
 def sec_projects(t):
     c = t["proj_cols"]
-    proj = "".join(f'<div class="card"><p class="eyebrow">{esc(a)}</p><h2>{esc(b)}</h2><p>{esc(r)}</p></div>' for a, b, r in t["proj"])
+    proj = "".join(f'<div class="card"><p class="eyebrow">{esc(a)}</p><h2>{esc(b)}</h2></div>' for a, b, r in t["proj"])
     return f'<section><div class="wrap stack g48"><p class="muted" style="max-width:72ch">{t["proj_note"]}</p><div class="cards">{proj}</div></div></section>\n'
 
 def sec_team(t):
