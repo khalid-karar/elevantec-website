@@ -382,10 +382,12 @@ def sec_projects(t):
 
 def sec_team(t):
     team = ""
-    for n, r, note in t["team"]:
+    PERSONAL = ["k.abdelrahman@elevantec.sa", "m.abdallah@elevantec.sa"]
+    for i, (n, r, note) in enumerate(t["team"]):
+        em = PERSONAL[i] if i < len(PERSONAL) else EMAIL
         lines = []
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
-        lines.append(f'<li><a href="mailto:{EMAIL}"><bdi>{EMAIL}</bdi></a></li>')
+        lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
         team += f'<div class="card"><h2>{esc(n)}</h2><p class="eyebrow">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div>\n'
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="eyebrow">{esc(r)}</p><p class="loc">{esc(loc)}</p><p class="muted">{esc(d)}</p></div>' for n, r, loc, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
