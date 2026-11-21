@@ -402,11 +402,13 @@ def sec_team(t):
     team = ""
     PERSONAL = ["k.abdelrahman@elevantec.sa", "n.kadi@elevantec.sa", "m.abdallah@elevantec.sa"]
     PHOTOS = ["khalid", "nizar", "mohammed"]
+    PHONES = {1: ("+966592805555", "+966 59 280 5555")}
     for i, (n, r, note) in enumerate(t["team"]):
         em = (PERSONAL[i] if i < len(PERSONAL) else None) or EMAIL
         photo = f'<img class="avatar" src="/assets/img/team/{PHOTOS[i]}.jpg" alt="{esc(n)}" width="320" height="320" loading="lazy">' if i < len(PHOTOS) else ""
         lines = []
-        if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
+        tel, disp = PHONES.get(i, (PHONE_TEL, PHONE_DISPLAY))
+        if tel: lines.append(f'<li><a href="tel:{tel}"><bdi>{disp}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
         team += f'<div class="card person">{photo}<div class="pbody"><p class="eyebrow">{esc(r)}</p><h2>{esc(n)}</h2><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="muted">{esc(d)}</p></div>' for n, d in t["sme"])
