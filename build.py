@@ -18,7 +18,7 @@ EMAIL = "info@elevantec.sa"
 PRIVACY_EMAIL = "privacy@elevantec.sa"
 PHONE_DISPLAY = "+966 50 020 9038"                   # e.g. "+966 5X XXX XXXX"; empty hides the phone rows
 PHONE_TEL = "+966500209038"                       # e.g. "+9665XXXXXXXX"
-LINKEDIN_URL = ""                    # empty hides the LinkedIn icon (footer) and row (contact); set when the page exists
+LINKEDIN_URL = "https://www.linkedin.com/company/elevantec/"                    # empty hides the LinkedIn icon (footer) and row (contact); set when the page exists
 SUPPORT_EMAIL = "support@elevantec.sa"
 BOOKING_URL = ""                     # Cal.com / Calendly link; empty hides the "book a call" button
 CR = "7050745707"                    # same legal entity as Maya AI / Sahm Alkarar
@@ -88,6 +88,7 @@ T = {
           ("دعم القرار للمحافظ والمشاريع", "لوحات دعم قرار للمحافظ والمشاريع", "تصميم النظام وبناء اللوحات")],
  "team_eyebrow": "", "team_h": "الفريق",
  "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "خبرة تزيد على 16 عامًا في القطاعين الخاص والعام في الولايات المتحدة، في تسليم برمجيات المؤسسات والتحول الرقمي. يقود عمليات الشركة وشراكاتها الدولية في المملكة."),
+          ("نزار قاضي", "مستشار تطوير الأعمال", "يدعم نمو إليفانتك في المملكة، من تحديد الفرص وبناء الشراكات إلى تعزيز الحضور في السوق."),
           ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP وPMOCP وPBA في إدارة المحافظ والبرامج والمشاريع، وخبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية.")],
  "sme_h": "نخبة الخبراء المتخصصين", "sme_eyebrow": "",
  "sme": [("الذكاء الاصطناعي", "نماذج وتطبيقات الذكاء الاصطناعي المؤسسي، من التعلّم الآلي إلى النماذج اللغوية، مصممة لتعمل داخل ضوابط الأمن والامتثال لدى العميل."),
@@ -181,6 +182,7 @@ T = {
           ("Portfolio and project decision support", "Decision-support dashboards for portfolios and projects", "System design and dashboard build")],
  "team_eyebrow": "", "team_h": "Team",
  "team": [("Eng. Khalid Abdelrahman", "CEO", "Over 16 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
+          ("Nizar Kadi", "Business Development Advisor", "Supports Elevantec’s growth in the Kingdom, from identifying opportunities and building partnerships to strengthening our market presence."),
           ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
  "sme_h": "SMEs Pool", "sme_eyebrow": "",
  "sme": [("Artificial intelligence", "Enterprise AI models and applications, from machine learning to language models, built to run inside the client’s security and compliance controls."),
@@ -398,10 +400,10 @@ def sec_projects(t):
 
 def sec_team(t):
     team = ""
-    PERSONAL = ["k.abdelrahman@elevantec.sa", "m.abdallah@elevantec.sa"]
-    PHOTOS = ["khalid", "mohammed"]
+    PERSONAL = ["k.abdelrahman@elevantec.sa", None, "m.abdallah@elevantec.sa"]
+    PHOTOS = ["khalid", "nizar", "mohammed"]
     for i, (n, r, note) in enumerate(t["team"]):
-        em = PERSONAL[i] if i < len(PERSONAL) else EMAIL
+        em = (PERSONAL[i] if i < len(PERSONAL) else None) or EMAIL
         photo = f'<img class="avatar" src="/assets/img/team/{PHOTOS[i]}.jpg" alt="{esc(n)}" width="320" height="320" loading="lazy">' if i < len(PHOTOS) else ""
         lines = []
         if PHONE_TEL: lines.append(f'<li><a href="tel:{PHONE_TEL}"><bdi>{PHONE_DISPLAY}</bdi></a></li>')
