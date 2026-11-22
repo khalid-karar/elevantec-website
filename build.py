@@ -294,7 +294,7 @@ def header(lang, key):
     links = "".join(f'<a href="{path_for(lang, k)}"' + (' aria-current="page"' if key == k else "") + f'>{n}</a>' for k, n in t["nav"])
     return f'''<a class="skip" href="#main">{t["skip"]}</a>
 <header class="site">
-  <a class="brand" href="{b}" aria-label="{esc(t["brand"])} - {t["home_label"]}"><img src="/assets/img/logo-h-en.svg" alt="" width="142" height="40"></a>
+  <a class="brand" href="{b}" aria-label="{esc(t["brand"])} - {t["home_label"]}"><img src="/assets/img/logo-h-en.svg" alt="" width="105" height="52"></a>
   <button class="menu-btn" type="button" hidden aria-label="{MENU[lang][0]}" aria-expanded="false" aria-controls="site-nav" data-open="{MENU[lang][0]}" data-close="{MENU[lang][1]}"><span class="bars" aria-hidden="true"></span></button>
   <nav class="main" id="site-nav" aria-label="{'التنقل الرئيسي' if lang == 'ar' else 'Main'}">
     {links}
@@ -320,7 +320,7 @@ def footer(lang):
     social = f'<p class="social"><a href="{LINKEDIN_URL}" target="_blank" rel="noopener" aria-label="LinkedIn">{LI_SVG}</a></p>' if LINKEDIN_URL else ""
     return f'''<footer class="site">
   <div class="wrap">
-    <div class="stack g12"><a class="brand" href="{b}" aria-label="{esc(t["brand"])}"><img src="/assets/img/logo-h-en.svg" alt="" width="124" height="35" loading="lazy"></a>
+    <div class="stack g12"><a class="brand" href="{b}" aria-label="{esc(t["brand"])}"><img src="/assets/img/logo-h-en.svg" alt="" width="80" height="40" loading="lazy"></a>
       <p>{L["hq_val"]}</p>{social}</div>
     <div><h2>{L["links_h"]}</h2><ul>{nav}</ul></div>
     <div><h2>{L["contact_h"]}</h2><ul>{contact}</ul></div>
@@ -463,7 +463,7 @@ def home(lang):
     arrow = "←" if lang == "ar" else "→"
     trust = "".join("<li>" + esc(x).replace("PfMP · PgMP · PMP", "<bdi>PfMP · PgMP · PMP</bdi>") + "</li>" for x in t["trust"])
     logo = "/assets/img/logo-en.png"   # same English logo on both language versions
-    dims = (440, 125)
+    dims = (440, 218)
     names = dict(t["nav"])
     cards = "".join(f'<div class="card link"><h3>{names[k]}</h3><p>{g[k]}</p><a class="more stretch" href="{path_for(lang, k)}">{g["more"]} {arrow}</a></div>' for k in PAGES[:4])
     body = f'''<body>
