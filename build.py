@@ -56,27 +56,33 @@ T = {
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
  "mission_h": "رسالتنا", "mission": "نطوّر وننشر أنظمة ذكاء الأعمال بالذكاء الاصطناعي وحلول GeoAI وأنظمة دعم قرار للمحافظ والمشاريع، لتساعد الجهات السعودية على التعامل مع بياناتها بوصفها أصلًا استراتيجيًا. وبدمج الهندسة المتقدمة للذكاء الاصطناعي المؤسسي مع GeoAI وممارسات إدارة المحافظ والبرامج والمشاريع المعتمدة، نحوّل البيانات المعقدة إلى معلومات جاهزة لمجلس الإدارة.",
  "gap_h": "لماذا وُجدنا", "gap": "معظم الجهات تقدّم قطعة واحدة من الصورة. شركات الاستشارات الهندسية التقليدية تقدّم دراسات فنية ويبقى تتبّع المحافظ والمشاريع يدويًا، وشركات الذكاء الاصطناعي تبني النماذج دون فهم لعدم اليقين في البيانات البيئية والمكانية. نحن نجمع الأمور الثلاثة: دعم القرار للمحافظ والمشاريع، وGeoAI، والنشر التشغيلي للذكاء الاصطناعي، في كيان سعودي واحد.",
- "svc_eyebrow": "خدماتنا", "svc_h": "ثلاث ركائز متكاملة",
+ "svc_more": "ما الذي يشمله", "svc_eyebrow": "خدماتنا", "svc_h": "ثلاث ركائز متكاملة",
  "pillars": [
-  {"icon": "ai", "tag": "الركيزة أ", "h": "الذكاء الاصطناعي المؤسسي والتحول الرقمي والنشر السيادي",
-   "items": [("وكلاء الذكاء الاصطناعي وأتمتة سير العمل", "أتمتة تحت إشراف بشري لعمليات الجهة وموافقاتها وتنفيذ خدماتها."),
-             ("التحول الرقمي للشركات", "نساعد الشركات على تقييم وضعها الحالي وتحديد الأولويات وتطبيق أساليب عمل رقمية مدعومة بالذكاء الاصطناعي، من إعادة تصميم الإجراءات حتى التبني."),
-             ("تطوير المنصات المخصصة", "تصميم وبناء منصات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي حول طريقة عمل جهتك، من هندسة النظام حتى النشر."),
-             ("ذكاء المعرفة والمستندات", "استرجاع مستندات المؤسسة وذكاء محتوى متعدد اللغات (عربي/إنجليزي) للجهات التي تدير منظومات مستندات ضخمة، من الجهات التنظيمية إلى المكاتب القانونية."),
-             ("النشر الخاص والسيادي للذكاء الاصطناعي", "نشر على السحابة والسحابة الخاصة والبنية المحلية والهجينة، مصمَّم ليتوافق مع NCA-ECC وإرشادات سدايا ونظام حماية البيانات الشخصية، وهو أمر حاسم للجهات الحكومية.")],
-   "outcome": "ذكاء اصطناعي مؤسسي يعمل داخل ضوابط الأمن والامتثال لديك."},
-  {"icon": "geo", "tag": "الركيزة ب", "h": "الاستشارات في الذكاء الاصطناعي الجيومكاني (GeoAI)",
-   "items": [("النمذجة المعززة بـ GeoAI لحلول الأعمال والحلول الذكية", "دمج صور الأقمار الصناعية وبيانات الاستشعار عن بعد مع نماذج تحليلية متقدمة، لدعم قرارات الأعمال وتطوير الحلول الذكية."),
-             ("تصميم قواعد البيانات الجيومكانية والبنية المكانية", "تصميم قواعد بيانات جيومكانية وبنية بيانات مكانية (SDI) تجعل بيانات الجهة قابلة للمشاركة والتحليل."),
-             ("الذكاء المكاني والتشغيلي", "مراقبة البنية التحتية، والوعي بالعمليات الميدانية، ورؤية بيئية للأصول الموزعة."),
-             ("مفاهيم التوأم الرقمي للبنية التحتية", "تقييم الجاهزية وتصميم البنية وخارطة طريق التنفيذ للتوائم الرقمية للبنية التحتية.")],
-   "outcome": "من بيانات الأقمار الصناعية إلى قرار مجلس الإدارة، في أسابيع لا سنوات."},
-  {"icon": "gov", "tag": "الركيزة ج", "h": "دعم القرار للمحافظ والمشاريع",
-   "items": [("لوحات دعم القرار", "لوحات حيّة على التكلفة والجدول الزمني والمخاطر، مبنية لتمكّنك من اتخاذ القرار والتنفيذ، لا مجرد الاطلاع."),
-             ("نُعطيك النظام، لا ندير عنك العمل", "نبني لك النظام الذي يُظهر لك سير العمل أولًا بأول، بينما يبقى القرار والتحكم في يدك."),
-             ("مبنية على ممارسات معتمدة", "أنظمة مبنية على أسس إدارة المحافظ والبرامج والمشاريع المعتمدة (PfMP وPgMP وPMP)، لا أدوات عامة."),
-             ("دعم القرار لبرامج التحول الرقمي", "منح برامج التحول الرقمي نفس الرؤية اللحظية ودعم القرار المتاح لأي محفظة أخرى.")],
-   "outcome": "لا نُدير محفظتك بالنيابة عنك، بل نمنحك النظام الذي يُريك سير العمل لتبني عليه قرارك."},
+  {"icon": "ai", "h": "الذكاء الاصطناعي المؤسسي",
+   "story": "تقضي فرقك ساعات في موافقات يدوية ومستندات متفرقة وأنظمة لا تتواصل فيما بينها.",
+   "tags": ["الأتمتة", "النشر السيادي", "ذكاء المستندات"],
+   "outcome": "ذكاء اصطناعي يعمل داخل ضوابط الأمن والامتثال لديك.",
+   "items": ["وكلاء ذكاء اصطناعي وأتمتة لسير العمل تحت إشراف بشري",
+             "خرائط طريق للتحول الرقمي ودعم التبني",
+             "منصات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي",
+             "البحث في المستندات وذكاء المعرفة بالعربية والإنجليزية",
+             "نشر خاص ومحلي وسيادي متوافق مع NCA-ECC وإرشادات سدايا ونظام حماية البيانات الشخصية"]},
+  {"icon": "geo", "h": "الذكاء الجيومكاني ونظم المعلومات الجغرافية",
+   "story": "أصولك موزعة على الخريطة، والبيانات التي تصفها حبيسة أنظمة منفصلة.",
+   "tags": ["تحليل صور الأقمار الصناعية", "البنية المكانية للبيانات", "التوائم الرقمية"],
+   "outcome": "من بيانات الأقمار الصناعية إلى قرار مجلس الإدارة.",
+   "items": ["نمذجة GeoAI من صور الأقمار الصناعية وبيانات الاستشعار عن بعد",
+             "تصميم قواعد البيانات الجيومكانية والبنية المكانية للبيانات (SDI)",
+             "مراقبة البنية التحتية والوعي بالعمليات الميدانية",
+             "تقييم جاهزية التوأم الرقمي وتصميمه وخارطة تنفيذه"]},
+  {"icon": "gov", "h": "دعم القرار للمحافظ والمشاريع",
+   "story": "لديك عشرات المشاريع قيد التنفيذ، ولا توجد رؤية واحدة للتكلفة والجدول الزمني والمخاطر.",
+   "tags": ["لوحات حيّة", "ممارسات معتمدة", "برامج التحول"],
+   "outcome": "رؤية واحدة واضحة لسير العمل، لتتخذ قرارك بثقة.",
+   "items": ["لوحات حيّة للتكلفة والجدول الزمني والمخاطر",
+             "أنظمة مبنية على ممارسات PfMP وPgMP وPMP المعتمدة",
+             "دعم القرار لبرامج التحول الرقمي",
+             "القرار والتحكم يبقيان لديك، ونحن نوفر لك النظام"]},
  ],
  "proj_eyebrow": "خبراتنا", "proj_h": "نماذج من خبراتنا",
  "proj_note": "تحافظ إليفانتك على السرية. تُشارك المراجع التفصيلية ودراسات الحالة مباشرة، بعد توقيع اتفاقيات السرية المناسبة. وتمثل الفئات أدناه الخبرة المجمّعة لقيادة الشركة وفرق شركائها.",
@@ -88,8 +94,8 @@ T = {
           ("دعم القرار للمحافظ والمشاريع", "لوحات دعم قرار للمحافظ والمشاريع", "تصميم النظام وبناء اللوحات")],
  "team_eyebrow": "", "team_h": "الفريق",
  "team": [("م. خالد عبدالرحمن", "الرئيس التنفيذي", "خبرة تزيد على 15 عامًا في القطاعين الخاص والعام في الولايات المتحدة، في تسليم برمجيات المؤسسات والتحول الرقمي. يقود عمليات الشركة وشراكاتها الدولية في المملكة."),
-          ("م. نزار قاضي", "استشاري تطوير الأعمال", "خبرة تزيد على 15 عامًا في الاستشارات المتعلقة باستراتيجية النمو والاستثمار، وتأسيس مكاتب إدارة المشاريع (PMO)، وقيادة الحوكمة وإدارة المخاطر والامتثال في القطاعين الحكومي والخاص. أدار محافظ كبرى من المشاريع الحكومية والاستثمارية. حاصل على اعتمادات P3O وPMP وPMI-RMP وGRCP وOKR."),
-          ("د. محمد عبدالله", "المدير الفني", "حاصل على اعتمادات PfMP وPgMP وPMP وPMOCP وPBA في إدارة المحافظ والبرامج والمشاريع، وخبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية.")],
+          ("م. نزار قاضي", "استشاري تطوير الأعمال", "خبرة تزيد على 15 عامًا في الاستشارات المتعلقة باستراتيجية النمو والاستثمار، وتأسيس مكاتب إدارة المشاريع (PMO)، وقيادة الحوكمة وإدارة المخاطر والامتثال في القطاعين الحكومي والخاص. أدار محافظ كبرى من المشاريع الحكومية والاستثمارية."),
+          ("د. محمد عبدالله", "المدير الفني", "خبرة تزيد على 20 عامًا في ألمانيا في الهيدروإنفورماتكس ونظم المعلومات الجغرافية (GIS) والبيانات الجيومكانية، وفي إدارة المحافظ والبرامج والمشاريع.")],
  "sme_h": "نخبة الخبراء المتخصصين", "sme_eyebrow": "",
  "sme": [("الذكاء الاصطناعي", "نماذج وتطبيقات الذكاء الاصطناعي المؤسسي، من التعلّم الآلي إلى النماذج اللغوية، مصممة لتعمل داخل ضوابط الأمن والامتثال لدى العميل."),
          ("GeoAI ونظم المعلومات الجغرافية والاستشعار عن بعد", "تحليلات الصور الجيومكانية وبيانات الأقمار الصناعية ونظم المعلومات الجغرافية (GIS)، لتحويل البيانات المكانية إلى رؤى قابلة للتنفيذ."),
@@ -149,27 +155,33 @@ T = {
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
  "mission_h": "Our mission", "mission": "We develop and deploy AI business-intelligence systems, GeoAI solutions and decision-support systems for portfolios and projects, helping Saudi organizations treat data as a strategic asset. By combining enterprise-grade AI engineering, GeoAI, and certified portfolio, program and project management practice, we turn complex data into boardroom-ready intelligence.",
  "gap_h": "Why we exist", "gap": "Most firms offer one piece of the puzzle. Traditional engineering consultancies deliver technical studies but leave portfolios and projects tracked by hand. Pure AI firms build models but do not understand real-world uncertainty in environmental and spatial data. We bring all three together under one Saudi-registered entity: portfolio and project decision support, GeoAI and operational AI deployment.",
- "svc_eyebrow": "Services", "svc_h": "Three integrated pillars",
+ "svc_more": "See what’s included", "svc_eyebrow": "Services", "svc_h": "Three integrated pillars",
  "pillars": [
-  {"icon": "ai", "tag": "Pillar A", "h": "Enterprise AI, digital transformation and sovereign deployment",
-   "items": [("AI agents and workflow automation", "Human-supervised automation for operations, approvals and service execution."),
-             ("Digital transformation for companies", "Helping companies assess where they stand, set priorities and roll out digital and AI-enabled ways of working, from process redesign to adoption."),
-             ("Custom platform development", "Designing and building custom AI-powered platforms and applications around how your organization works, from architecture to deployment."),
-             ("Knowledge and document intelligence", "Enterprise document retrieval and multilingual (Arabic/English) content intelligence for organizations managing large document estates, from regulators to law firms."),
-             ("Private and sovereign AI deployment", "Cloud, private cloud, on-premises and hybrid deployment, designed to align with NCA-ECC, SDAIA guidance and PDPL. Critical for government clients.")],
-   "outcome": "Enterprise-grade AI that operates inside your security and compliance controls."},
-  {"icon": "geo", "tag": "Pillar B", "h": "GeoAI advisory",
-   "items": [("GeoAI-enabled modeling for business and smart solutions", "Combining satellite imagery and remote-sensing data with advanced analytical models to support business decisions and smart solutions."),
-             ("Geospatial database and SDI design", "Designing geospatial databases and spatial data infrastructure that make an organization's data shareable and analyzable."),
-             ("Spatial and operational intelligence", "Infrastructure monitoring, field operations awareness and environmental visibility for distributed assets."),
-             ("Digital twin concepts for infrastructure", "Readiness assessment, architecture design and an implementation roadmap for infrastructure digital twins.")],
-   "outcome": "From satellite data to a boardroom decision, in weeks, not years."},
-  {"icon": "gov", "tag": "Pillar C", "h": "Portfolio and Project Decision Support",
-   "items": [("Decision-support dashboards", "Live dashboards on cost, schedule and risk, built so you can decide and act, not just look."),
-             ("We give you the system, not run the work", "We build the system that shows you how the work is moving, while the decisions and the control stay with you."),
-             ("Built on certified practice", "Systems built on certified portfolio, program and project management practice (PfMP, PgMP, PMP), not generic trackers."),
-             ("Decision support for transformation programs", "Giving digital transformation programs the same live visibility and decision support as any other portfolio.")],
-   "outcome": "We don\'t manage your portfolio for you. We give you the system that shows you how the work is moving, so you can build your decisions on it."},
+  {"icon": "ai", "h": "Enterprise AI",
+   "story": "Your teams lose hours to manual approvals, scattered documents and systems that don’t talk to each other.",
+   "tags": ["Automation", "Sovereign deployment", "Document intelligence"],
+   "outcome": "AI that works inside your security and compliance controls.",
+   "items": ["Human-supervised AI agents and workflow automation",
+             "Digital transformation roadmaps and adoption",
+             "Custom AI-powered platforms and applications",
+             "Arabic and English document search and knowledge intelligence",
+             "Private, on-premises and sovereign deployment aligned with NCA-ECC, SDAIA guidance and PDPL"]},
+  {"icon": "geo", "h": "GeoAI and GIS",
+   "story": "Your assets are spread across the map, and the data that describes them sits in separate systems.",
+   "tags": ["Satellite analytics", "Spatial data infrastructure", "Digital twins"],
+   "outcome": "From satellite data to a boardroom decision.",
+   "items": ["GeoAI modeling from satellite and remote-sensing data",
+             "Geospatial database and spatial data infrastructure (SDI) design",
+             "Infrastructure monitoring and field operations awareness",
+             "Digital twin readiness, architecture and roadmap"]},
+  {"icon": "gov", "h": "Portfolio decision support",
+   "story": "You have dozens of projects running, and no single view of cost, schedule and risk.",
+   "tags": ["Live dashboards", "Certified practice", "Transformation programs"],
+   "outcome": "One clear view of how the work is moving, so you decide with confidence.",
+   "items": ["Live dashboards on cost, schedule and risk",
+             "Systems built on certified PfMP, PgMP and PMP practice",
+             "Decision support for digital transformation programs",
+             "You keep the decisions and control; we give you the system"]},
  ],
  "proj_eyebrow": "Experience", "proj_h": "Representative experience",
  "proj_note": "Elevantec prioritizes confidentiality. Specific organizational references and detailed case studies are shared directly under appropriate confidentiality agreements. The categories below represent the combined track record of our leadership and partner teams.",
@@ -181,8 +193,8 @@ T = {
           ("Portfolio and project decision support", "Decision-support dashboards for portfolios and projects", "System design and dashboard build")],
  "team_eyebrow": "", "team_h": "Team",
  "team": [("Eng. Khalid Abdelrahman", "CEO", "Over 15 years of experience across the private and public sectors in the United States, in enterprise software delivery and digital transformation. Leads the company’s operations and international partnerships in the Kingdom."),
-          ("Eng. Nizar Kadi", "Business Development Consultant", "15+ years of experience advising on growth strategy and investment, establishing PMOs, and leading governance, risk and compliance across government and commercial sectors. Has managed large government and investment project portfolios. P3O, PMP, PMI-RMP, GRCP and OKR certified."),
-          ("Dr. Mohammed Abdallah", "Technical Director", "PfMP, PgMP, PMP, PMOCP and PBA certified in portfolio, program and project management, with 20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics.")],
+          ("Eng. Nizar Kadi", "Business Development Consultant", "15+ years of experience advising on growth strategy and investment, establishing PMOs, and leading governance, risk and compliance across government and commercial sectors. Has managed large government and investment project portfolios."),
+          ("Dr. Mohammed Abdallah", "Technical Director", "20+ years of experience in Germany in hydroinformatics, GIS and geospatial analytics, and in portfolio, program and project management.")],
  "sme_h": "SMEs Pool", "sme_eyebrow": "",
  "sme": [("Artificial intelligence", "Enterprise AI models and applications, from machine learning to language models, built to run inside the client’s security and compliance controls."),
          ("GeoAI, GIS and remote sensing", "Geospatial imagery analytics, satellite data and GIS, turning spatial data into insight that can be acted on."),
@@ -384,12 +396,16 @@ def sec_about(t):
 '''
 
 def sec_services(t):
-    pillars = ""
+    cards = outs = ""
     for p in t["pillars"]:
-        items = "".join(f'<div class="principle"><h3>{esc(a)}</h3><p>{esc(c)}</p></div>' for a, c in p["items"])
-        pillars += f'''<div class="card pillar">{ICONS[p["icon"]]}<p class="eyebrow">{p["tag"]}</p><h2>{esc(p["h"])}</h2><div class="stack">{items}</div><p class="outcome">{esc(p["outcome"])}</p></div>
+        tags = "".join(f"<li>{esc(x)}</li>" for x in p["tags"])
+        items = "".join(f"<li>{esc(x)}</li>" for x in p["items"])
+        cards += f'''<div class="card pcard">{ICONS[p["icon"]]}<h2>{esc(p["h"])}</h2><p class="story">{esc(p["story"])}</p><ul class="tags">{tags}</ul>
+<details><summary>{t["svc_more"]}</summary><ul class="incl">{items}</ul></details></div>
 '''
-    return f'<section><div class="wrap"><div class="cards two">{pillars}</div></div></section>\n'
+        outs += f'<p>{esc(p["outcome"])}</p>'
+    return f'''<section><div class="wrap stack g48"><div class="pcards">{cards}</div><div class="outcomes">{outs}</div></div></section>
+'''
 
 def sec_projects(t):
     c = t["proj_cols"]
@@ -401,6 +417,7 @@ def sec_team(t):
     PERSONAL = ["k.abdelrahman@elevantec.sa", "n.kadi@elevantec.sa", "m.abdallah@elevantec.sa"]
     PHOTOS = ["khalid", "nizar", "mohammed"]
     PHONES = {1: ("+966592805555", "+966 59 280 5555")}
+    CREDS = [["CISA"], ["P3O", "PMP", "PMI-RMP", "GRCP", "OKR"], ["PfMP", "PgMP", "PMP", "PMOCP", "PBA"]]
     for i, (n, r, note) in enumerate(t["team"]):
         em = (PERSONAL[i] if i < len(PERSONAL) else None) or EMAIL
         photo = f'<img class="avatar" src="/assets/img/team/{PHOTOS[i]}.jpg" alt="{esc(n)}" width="320" height="320" loading="lazy">' if i < len(PHOTOS) else ""
@@ -408,7 +425,7 @@ def sec_team(t):
         tel, disp = PHONES.get(i, (PHONE_TEL, PHONE_DISPLAY))
         if tel: lines.append(f'<li><a href="tel:{tel}"><bdi>{disp}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
-        team += f'<div class="card person">{photo}<div class="pbody"><h2>{esc(n)}</h2><p class="eyebrow role">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
+        team += f'<div class="card person">{photo}<div class="pbody"><h2>{esc(n)}</h2><p class="role">{esc(r)}</p><ul class="creds" dir="ltr">{"".join(f"<li>{c}</li>" for c in (CREDS[i] if i < len(CREDS) else []))}</ul><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="muted">{esc(d)}</p></div>' for n, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
     return f'''<section><div class="wrap stack g48"><div class="people">{team}</div></div></section>
