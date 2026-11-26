@@ -408,7 +408,7 @@ def sec_team(t):
         tel, disp = PHONES.get(i, (PHONE_TEL, PHONE_DISPLAY))
         if tel: lines.append(f'<li><a href="tel:{tel}"><bdi>{disp}</bdi></a></li>')
         lines.append(f'<li><a href="mailto:{em}"><bdi>{em}</bdi></a></li>')
-        team += f'<div class="card person">{photo}<div class="pbody"><p class="eyebrow">{esc(r)}</p><h2>{esc(n)}</h2><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
+        team += f'<div class="card person">{photo}<div class="pbody"><h2>{esc(n)}</h2><p class="eyebrow role">{esc(r)}</p><p class="muted">{esc(note)}</p><ul>{"".join(lines)}</ul></div></div>\n'
     sme = "".join(f'<div class="card"><h3>{esc(n)}</h3><p class="muted">{esc(d)}</p></div>' for n, d in t["sme"])
     it = f'<div class="card it"><h2>{t["it_h"]}</h2><p class="muted">{t["it_p"]} <a href="mailto:{SUPPORT_EMAIL}"><bdi>{SUPPORT_EMAIL}</bdi></a>.</p></div>'
     return f'''<section><div class="wrap stack g48"><div class="people">{team}</div></div></section>
