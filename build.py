@@ -42,7 +42,7 @@ T = {
 "ar": {
  "dir": "rtl", "lang": "ar", "base": "/", "other": "en", "other_label": "English", "locale": "ar_SA", "other_locale": "en_US",
  "brand": "شركة إليفانتك", "brand_core": "إليفانتك", "co": "شركة", "skip": "انتقل إلى المحتوى", "home_label": "الرئيسية",
- "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("partners", "الشركاء"), ("news", "الأخبار"), ("contact", "تواصل معنا")],
+ "nav": [("about", "عن الشركة"), ("services", "خدماتنا"), ("projects", "خبراتنا"), ("team", "الفريق"), ("partners", "الشركاء"), ("contact", "تواصل معنا")],
  "nav_services": "خدماتنا",
  "title": "شركة إليفانتك | الذكاء الاصطناعي المؤسسي والذكاء الجيومكاني ودعم القرار للمحافظ والمشاريع في الرياض",
  "desc": "شركة إليفانتك شركة سعودية في الرياض تجمع حلول الذكاء الاصطناعي المؤسسي، والذكاء الاصطناعي الجيومكاني (GeoAI)، ودعم القرار للمحافظ والمشاريع لدعم برامج التحول الرقمي والبيئة في رؤية 2030.",
@@ -50,7 +50,7 @@ T = {
  "h1": "نحوّل بياناتك المعقدة إلى قرارات تتحكم أنت بها",
  "lead": "الذكاء الاصطناعي المؤسسي والجيومكاني (GeoAI) ودعم القرار للمحافظ والمشاريع للجهات الحكومية والشركات والمنشآت الصغيرة والمتوسطة والمكاتب المهنية. نحوّل التعقيد إلى وضوح، والوضوح إلى أثر مستدام.",
  "cta1": "تواصل معنا", "cta2": "خدماتنا", "logo_alt": "شعار إليفانتك",
- "trust": ["شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC", "تنفيذ بالشراكة مع شركاء تقنيين من الولايات المتحدة وألمانيا"],
+ "trust": ["شركة سعودية مسجلة في الرياض", "تصميم متوافق مع ضوابط NCA-ECC"],
  "partners_eyebrow": "", "partners_h": "الشركاء", "partner_role": "شريك استراتيجي", "partner_name": "Accelerate Consulting", "partner_p": "شركة استشارات أعمال وتأكيد مهني، تساعد المنظمات على تعزيز الحوكمة واتخاذ قرارات استراتيجية سليمة واعتماد حلول مبتكرة.", "partner_p2": "نتعاون معًا في تطوير حلّ متكامل للحوكمة وإدارة المخاطر والامتثال (GRC) للمنظمات في المملكة.", "partner_link": "زيارة الموقع",
  "about_eyebrow": "عن الشركة", "about_h": "الرؤية والرسالة",
  "vision_h": "رؤيتنا", "vision": "أن نكون الشريك الموثوق للرواد وأصحاب الأعمال في تمكين القرار، عبر حلول ذكية ومستدامة وفعّالة اقتصاديًا تتحول إلى محافظ منظّمة تقودها البيانات.",
@@ -105,8 +105,7 @@ T = {
          ("متوافقون مع رؤية 2030", "يدعم عملنا مباشرة أهداف الاستدامة البيئية والتحول الرقمي."),
          ("نشر سيادي للذكاء الاصطناعي", "تصميم متوافق مع NCA-ECC ونظام حماية البيانات الشخصية، وقابل للنشر محليًا أو على سحابة خاصة، وهو حاسم للجهات الحكومية."),
          ("ثلاث كفاءات في مكان واحد", "دعم القرار للمحافظ والمشاريع، وGeoAI، والذكاء الاصطناعي المؤسسي في فريق واحد."),
-         ("تنفيذ بثلاث لغات", "العربية والإنجليزية والألمانية، مع ملخصات تنفيذية تناسب صانع القرار السعودي."),
-         ("عمق تقني أمريكي وألماني", "تمنحنا شراكتنا التقنية في فرجينيا وألمانيا عمقًا هندسيًا، بينما تبقى المسؤولية والتنفيذ داخل المملكة.")],
+         ("تنفيذ بلغتين", "العربية والإنجليزية، مع ملخصات تنفيذية تناسب صانع القرار السعودي."),],
  "contact_eyebrow": "تواصل معنا", "contact_h": "لنناقش مشروعك", "contact_p": "اكتب لنا عن احتياجك. يرد عليك فريقنا في الرياض وفرجينيا، وتُعامل جميع الاستفسارات بسرية تامة.",
  "book": "احجز مكالمة تشخيصية مدتها 30 دقيقة", "linkedin": "لينكدإن",
  "labels": {"email": "البريد الإلكتروني", "phone": "الهاتف", "hq": "الموقع", "hq_val": "حي العليا، الرياض، المملكة العربية السعودية", "cr": "السجل التجاري",
@@ -136,7 +135,7 @@ T = {
 "en": {
  "dir": "ltr", "lang": "en", "base": "/en/", "other": "ar", "other_label": "العربية", "locale": "en_US", "other_locale": "ar_SA",
  "brand": "Elevantec Company", "brand_core": "elevantec", "co": "Company", "skip": "Skip to content", "home_label": "Home",
- "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("partners", "Partners"), ("news", "News"), ("contact", "Contact")],
+ "nav": [("about", "About"), ("services", "Services"), ("projects", "Experience"), ("team", "Team"), ("partners", "Partners"), ("contact", "Contact")],
  "nav_services": "Services",
  "title": "Elevantec Company | Enterprise AI, GeoAI and Portfolio and Project Decision Support in Riyadh",
  "desc": "Elevantec Company is a Saudi company in Riyadh combining enterprise AI deployment, GeoAI and portfolio and project decision support for Vision 2030 digital transformation and environmental programs.",
@@ -144,7 +143,7 @@ T = {
  "h1": "Turn complex data into decisions you control.",
  "lead": "Enterprise AI, GeoAI and portfolio and project decision support for government, corporates, SMEs and professional firms. We turn complexity into clarity, and clarity into sustainable impact.",
  "cta1": "Contact us", "cta2": "Our services", "logo_alt": "Elevantec logo",
- "trust": ["Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC", "Delivering with US and German technology partners"],
+ "trust": ["Saudi-registered, Riyadh-based", "Designed to align with NCA-ECC"],
  "partners_eyebrow": "", "partners_h": "Partners", "partner_role": "Strategic partner", "partner_name": "Accelerate Consulting", "partner_p": "A business consulting and assurance firm that helps organizations strengthen governance, make sound strategic decisions and adopt innovative solutions.", "partner_p2": "Together, we are collaborating on a governance, risk and compliance (GRC) solution for organizations in the Kingdom.", "partner_link": "Visit website",
  "about_eyebrow": "About", "about_h": "Vision and mission",
  "vision_h": "Our vision", "vision": "To be the trusted partner of entrepreneurs and business owners in enabling decisions, through smart, sustainable and economically sound solutions that become organized, data-driven portfolios.",
@@ -199,8 +198,7 @@ T = {
          ("Vision 2030-aligned", "Our work directly supports environmental sustainability and digital transformation goals."),
          ("Sovereign AI deployment", "Designed to align with NCA-ECC and PDPL, and deployable on-premises or in private cloud. Critical for government clients."),
          ("Three competencies in one team", "Portfolio and project decision support, GeoAI and enterprise AI together."),
-         ("Trilingual delivery", "English, German and Arabic, with executive summaries tailored for Saudi decision-makers."),
-         ("US and German technology depth", "Our technology partnerships in Virginia and Germany bring engineering depth, while delivery and accountability stay in the Kingdom.")],
+         ("Bilingual delivery", "Arabic and English, with executive summaries tailored for Saudi decision-makers."),],
  "contact_eyebrow": "Contact", "contact_h": "Let's discuss your project", "contact_p": "Tell us what you need. Our teams in Riyadh and Virginia will get back to you, and all inquiries are handled with strict confidentiality.",
  "book": "Book a 30-minute diagnostic call", "linkedin": "LinkedIn",
  "labels": {"email": "Email", "phone": "Phone", "hq": "Location", "hq_val": "Al Olaya, Riyadh, Saudi Arabia", "cr": "C.R. number",
@@ -229,7 +227,7 @@ T = {
 },
 }
 
-for _l in T: T[_l]["why"] = [T[_l]["why"][i] for i in (3, 2, 5, 0, 1, 4)]   # display order
+for _l in T: T[_l]["why"] = [T[_l]["why"][i] for i in (3, 2, 0, 1, 4)]   # display order
 
 # ---------------------------------------------------------------- helpers
 def esc(s): return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
@@ -381,7 +379,7 @@ def sec_about(t):
 </div></section>
 <section><div class="wrap stack g48">
   <div class="stack g12" style="max-width:640px"><p class="eyebrow">{t["why_eyebrow"]}</p><h2>{t["why_h"]}</h2></div>
-  <div class="cards">{why}</div>
+  <div class="cards sme">{why}</div>
 </div></section>
 '''
 
@@ -419,6 +417,12 @@ def sec_team(t):
 '''
 
 PROFILE = {"ar": "/files/Elevantec-Company-Profile-AR.pdf", "en": "/files/Elevantec-Company-Profile-EN.pdf"}
+def sec_profile(lang, t):
+    first, second = (("ar", "profile_ar"), ("en", "profile_en")) if lang == "ar" else (("en", "profile_en"), ("ar", "profile_ar"))
+    btns = "".join(f'<a class="btn{" gold" if i == 0 else ""}" href="{PROFILE[l]}" download>{t[k]}</a>' for i, (l, k) in enumerate((first, second)))
+    return f'''<section><div class="wrap"><div class="card profile"><h2>{t["profile_h"]}</h2><p class="muted">{t["profile_p"]}</p><div class="btns">{btns}</div></div></div></section>
+'''
+
 def sec_news(lang, t):
     first, second = (("ar", "profile_ar"), ("en", "profile_en")) if lang == "ar" else (("en", "profile_en"), ("ar", "profile_ar"))
     btns = "".join(f'<a class="btn{" gold" if i == 0 else ""}" href="{PROFILE[l]}" download>{t[k]}</a>' for i, (l, k) in enumerate((first, second)))
@@ -480,6 +484,7 @@ def home(lang):
 </section>
 <section class="trustbar"><div class="wrap"><ul>{trust}</ul></div></section>
 <section><div class="wrap stack g48"><h2>{g["explore_h"]}</h2><div class="cards">{cards}</div></div></section>
+{sec_profile(lang, t)}
 <section class="alt cta"><div class="wrap"><div class="stack g12"><h2>{t["contact_h"]}</h2><p class="muted">{g["contact"]}</p></div><div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta1"]}</a></div></div></section>
 </main>
 {footer(lang)}<script src="{JS}" defer></script>
@@ -519,7 +524,7 @@ def notfound():
 def sitemap():
     out = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for lang in ("ar", "en"):
-        for k in ["home"] + PAGES + ["privacy"]:
+        for k in ["home"] + [p for p in PAGES if p != "news"] + ["privacy"]:
             o = T[lang]["other"]
             out.append(f'<url><loc>{url(lang, k)}</loc><xhtml:link rel="alternate" hreflang="{lang}" href="{url(lang, k)}"/>'
                        f'<xhtml:link rel="alternate" hreflang="{o}" href="{url(o, k)}"/><xhtml:link rel="alternate" hreflang="x-default" href="{url("ar", k)}"/></url>')
