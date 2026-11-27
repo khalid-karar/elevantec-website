@@ -31,6 +31,10 @@ _P = lambda f: f'<link rel="preload" href="/assets/fonts/{f}-normal.woff2" as="f
 PRELOAD = {"ar": _P("ibm-plex-sans-arabic-arabic-400") + _P("noto-kufi-arabic-arabic-700"),
            "en": _P("ibm-plex-sans-latin-400") + _P("ibm-plex-sans-latin-600")}
 
+import re as _re
+def CICON(n, cls="cicon"):
+    svg = open(f"/home/claude/brand/carbon/icons/{n}.svg").read().strip()
+    return _re.sub(r'<svg[^>]*>', f'<svg class="{cls}" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">', svg, count=1).replace("\n", " ").replace("\t", " ")
 ICONS = {  # IBM Carbon pictograms (Apache 2.0)
  "ai": '<svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M12,1.64c-0.002,0-0.004,0-0.006,0c-1.473,0-2.691,0.759-3.239,2h-0.48 c-0.003,0-0.006,0-0.009,0c-1.271,0-2.478,0.425-3.398,1.199C3.892,5.659,3.354,6.79,3.352,8.021 c-0.001,0.995,0.526,2.097,1.025,2.791c-2.223,0.77-3.734,2.633-3.737,4.688c-0.003,2.046,1.507,3.91,3.734,4.687 c-0.506,0.692-1.044,1.788-1.045,2.766c-0.003,2.426,2.215,4.403,4.947,4.408h0.48c0.543,1.238,1.764,1.998,3.244,2 c0.002,0,0.004,0,0.007,0c1.972,0,3.351-1.381,3.354-3.36V5C15.363,3.025,13.982,1.643,12,1.64z M12,18.64 c-0.353,0-0.64-0.287-0.64-0.64s0.287-0.64,0.64-0.64s0.64,0.287,0.64,0.64S12.353,18.64,12,18.64z M14.64,13.64h-2.28V7.305 c0.575-0.159,1-0.681,1-1.305c0-0.75-0.61-1.36-1.36-1.36S10.64,5.25,10.64,6c0,0.625,0.425,1.146,1,1.305v6.335H10 c-0.001,0-0.001,0-0.002,0C9.2,13.64,8.641,14.199,8.64,15v0.64H6.305c-0.159-0.575-0.681-1-1.305-1c-0.75,0-1.36,0.61-1.36,1.36 S4.25,17.36,5,17.36c0.625,0,1.147-0.426,1.305-1H8.64v5.834c-0.575,0.159-1,0.681-1,1.306c0,0.75,0.61,1.36,1.36,1.36 s1.36-0.61,1.36-1.36c0-0.625-0.425-1.147-1-1.306V15c0.001-0.401,0.239-0.641,0.639-0.641H10h4.64v11.639 c-0.003,1.456-0.908,2.46-2.28,2.61v-9.303c0.575-0.159,1-0.681,1-1.306c0-0.75-0.61-1.36-1.36-1.36s-1.36,0.61-1.36,1.36 c0,0.625,0.425,1.147,1,1.306v9.31c-1.103-0.114-1.951-0.742-2.3-1.735C9.289,26.736,9.153,26.64,9,26.64H8.276 c-2.036-0.003-4.23-1.413-4.228-3.686c0.002-0.966,0.714-2.209,1.206-2.699c0.092-0.091,0.127-0.225,0.093-0.35 s-0.132-0.222-0.257-0.254c-2.199-0.566-3.733-2.273-3.73-4.151c0.003-1.876,1.522-3.573,3.695-4.141h2.64 c0.159,0.575,0.681,1,1.305,1c0.75,0,1.36-0.61,1.36-1.36S9.75,9.64,9,9.64c-0.625,0-1.146,0.425-1.305,1H5.162 C4.685,10.099,4.07,8.949,4.071,8.022C4.073,7.006,4.52,6.072,5.332,5.39c0.779-0.655,1.849-1.03,2.936-1.03 c0.002,0,0.005,0,0.008,0H9c0.152,0,0.288-0.096,0.339-0.239c0.392-1.103,1.384-1.761,2.655-1.761c0.002,0,0.003,0,0.005,0 C13.582,2.363,14.643,3.423,14.64,5V13.64z M12,6.64c-0.353,0-0.64-0.287-0.64-0.64S11.647,5.36,12,5.36S12.64,5.647,12.64,6 S12.353,6.64,12,6.64z M9,22.86c0.353,0,0.64,0.287,0.64,0.64S9.353,24.14,9,24.14s-0.64-0.287-0.64-0.64S8.647,22.86,9,22.86z M5.64,16c0,0.353-0.287,0.64-0.64,0.64S4.36,16.353,4.36,16S4.647,15.36,5,15.36S5.64,15.647,5.64,16z M8.36,11 c0-0.353,0.287-0.64,0.64-0.64S9.64,10.647,9.64,11S9.353,11.64,9,11.64S8.36,11.353,8.36,11z M31.36,15.5 c0.002-2.046-1.508-3.909-3.734-4.687c0.507-0.692,1.044-1.788,1.046-2.767c0.002-1.231-0.54-2.365-1.526-3.193 c-0.917-0.77-2.163-1.212-3.421-1.214h-0.48c-0.544-1.238-1.764-1.998-3.243-2c-0.003,0-0.005,0-0.008,0 c-0.972,0-1.808,0.323-2.418,0.933C16.965,3.185,16.642,4.023,16.64,5v20.999c-0.003,1.976,1.378,3.357,3.359,3.361 c0.003,0,0.005,0,0.007,0c1.473,0,2.69-0.76,3.238-2h0.479c0.004,0,0.007,0,0.01,0c1.271,0,2.478-0.426,3.398-1.199 c0.977-0.82,1.515-1.95,1.517-3.182c0.001-0.995-0.526-2.098-1.025-2.791C29.847,19.418,31.357,17.555,31.36,15.5z M20,12.36 c0.353,0,0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64s-0.64-0.287-0.64-0.64S19.647,12.36,20,12.36z M26.946,19.64h-2.641 c-0.159-0.575-0.681-1-1.306-1c-0.75,0-1.36,0.61-1.36,1.36s0.61,1.36,1.36,1.36c0.624,0,1.147-0.425,1.306-1h2.533 c0.476,0.541,1.091,1.691,1.089,2.618c-0.001,1.016-0.448,1.95-1.26,2.631c-0.781,0.657-1.865,1.01-2.943,1.03H23 c-0.152,0-0.288,0.097-0.339,0.239c-0.393,1.104-1.385,1.761-2.655,1.761c-0.002,0-0.004,0-0.005,0 c-0.781-0.001-1.445-0.252-1.919-0.725C17.608,27.441,17.358,26.78,17.36,26v-8.64h2.279v6.334c-0.575,0.159-1,0.681-1,1.306 c0,0.75,0.61,1.36,1.36,1.36s1.36-0.61,1.36-1.36c0-0.624-0.425-1.147-1-1.306V17.36h1.639c0.001,0,0.002,0,0.003,0 c0.799,0,1.356-0.559,1.358-1.36v-0.64h2.334c0.159,0.575,0.681,1,1.306,1c0.75,0,1.36-0.61,1.36-1.36s-0.61-1.36-1.36-1.36 c-0.625,0-1.147,0.425-1.306,1H23.36V8.805c0.575-0.159,1-0.681,1-1.305c0-0.75-0.61-1.36-1.36-1.36s-1.36,0.61-1.36,1.36 c0,0.624,0.425,1.146,1,1.305V16c0,0.401-0.238,0.641-0.638,0.641c-0.001,0-0.001,0-0.002,0h-4.64V5 c0.001-0.781,0.252-1.445,0.725-1.918c0.397-0.398,0.933-0.627,1.555-0.693v9.305c-0.575,0.159-1,0.681-1,1.305 c0,0.75,0.61,1.36,1.36,1.36s1.36-0.61,1.36-1.36c0-0.624-0.425-1.146-1-1.305v-9.31c1.103,0.115,1.951,0.742,2.3,1.736 c0.051,0.144,0.188,0.24,0.34,0.24h0.724c1.092,0.001,2.17,0.383,2.959,1.045c0.82,0.689,1.271,1.626,1.269,2.641 c-0.001,0.966-0.714,2.209-1.205,2.699c-0.092,0.091-0.127,0.225-0.094,0.35c0.034,0.125,0.133,0.222,0.258,0.254 c2.198,0.567,3.732,2.274,3.729,4.151C30.638,17.374,29.12,19.07,26.946,19.64z M23.64,20c0,0.353-0.287,0.64-0.64,0.64 s-0.64-0.287-0.64-0.64s0.287-0.64,0.64-0.64S23.64,19.647,23.64,20z M20,24.36c0.353,0,0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64 s-0.64-0.287-0.64-0.64S19.647,24.36,20,24.36z M23,8.14c-0.353,0-0.64-0.287-0.64-0.64S22.647,6.86,23,6.86s0.64,0.287,0.64,0.64 S23.353,8.14,23,8.14z M26.36,15c0-0.353,0.287-0.64,0.64-0.64s0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64S26.36,15.353,26.36,15z"/></svg>',
  "geo": '<svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M15,31.36h-3c-0.199,0-0.36-0.161-0.36-0.36v-3c0-0.199,0.161-0.36,0.36-0.36h3 c0.199,0,0.36,0.161,0.36,0.36v3C15.36,31.199,15.199,31.36,15,31.36z M12.36,30.64h2.28v-2.28h-2.28V30.64z M30,30.36h-4 c-0.199,0-0.36-0.161-0.36-0.36v-4c0-0.199,0.161-0.36,0.36-0.36h4c0.199,0,0.36,0.161,0.36,0.36v4 C30.36,30.199,30.199,30.36,30,30.36z M26.36,29.64h3.279v-3.28H26.36V29.64z M10,26.36H4c-0.199,0-0.36-0.161-0.36-0.36v-5.64H2 c-0.199,0-0.36-0.161-0.36-0.36v-2c0-0.199,0.161-0.36,0.36-0.36h2c0.199,0,0.36,0.161,0.36,0.36v1.64H10 c0.199,0,0.36,0.161,0.36,0.36v6C10.36,26.199,10.199,26.36,10,26.36z M4.36,25.64h5.28v-5.28H4.36V25.64z M2.36,19.64h1.28v-1.28 H2.36V19.64z M24,25.36h-4c-0.199,0-0.36-0.161-0.36-0.36v-4c0-0.199,0.161-0.36,0.36-0.36h4c0.199,0,0.36,0.161,0.36,0.36v4 C24.36,25.199,24.199,25.36,24,25.36z M20.36,24.64h3.279v-3.28H20.36V24.64z M31,21.36h-3c-0.199,0-0.36-0.161-0.36-0.36v-3 c0-0.199,0.161-0.36,0.36-0.36h3c0.199,0,0.36,0.161,0.36,0.36v3C31.36,21.199,31.199,21.36,31,21.36z M28.36,20.64h2.279v-2.28 H28.36V20.64z M16,21.36h-2c-0.199,0-0.36-0.161-0.36-0.36v-2c0-0.199,0.161-0.36,0.36-0.36h1.64V16c0-0.199,0.161-0.36,0.36-0.36h3 c0.199,0,0.36,0.161,0.36,0.36v3c0,0.199-0.161,0.36-0.36,0.36h-2.64V21C16.36,21.199,16.199,21.36,16,21.36z M14.36,20.64h1.28 v-1.28h-1.28V20.64z M16.36,18.64h2.28v-2.28h-2.28V18.64z M26,16.36h-2c-0.199,0-0.36-0.161-0.36-0.36v-2 c0-0.199,0.161-0.36,0.36-0.36h2c0.199,0,0.36,0.161,0.36,0.36v2C26.36,16.199,26.199,16.36,26,16.36z M24.36,15.64h1.279v-1.28 H24.36V15.64z M7,16.36H4c-0.199,0-0.36-0.161-0.36-0.36v-2.64H1c-0.199,0-0.36-0.161-0.36-0.36v-3c0-0.199,0.161-0.36,0.36-0.36 h2.64V8c0-0.199,0.161-0.36,0.36-0.36h2c0.199,0,0.36,0.161,0.36,0.36v2c0,0.199-0.161,0.36-0.36,0.36H4.36v2.28H7 c0.199,0,0.36,0.161,0.36,0.36v3C7.36,16.199,7.199,16.36,7,16.36z M4.36,15.64h2.28v-2.28H4.36V15.64z M1.36,12.64h2.28v-2.28H1.36 V12.64z M4.36,9.64h1.28V8.36H4.36V9.64z M14,14.36h-2c-0.199,0-0.36-0.161-0.36-0.36v-2c0-0.199,0.161-0.36,0.36-0.36h1.64V6 c0-0.199,0.161-0.36,0.36-0.36h6c0.199,0,0.36,0.161,0.36,0.36v6c0,0.199-0.161,0.36-0.36,0.36h-5.64V14 C14.36,14.199,14.199,14.36,14,14.36z M12.36,13.64h1.28v-1.28h-1.28V13.64z M14.36,11.64h5.28V6.36h-5.28 C14.36,6.36,14.36,11.64,14.36,11.64z M28,10.36h-3c-0.199,0-0.36-0.161-0.36-0.36V7c0-0.199,0.161-0.36,0.36-0.36h2.64V5 c0-0.199,0.161-0.36,0.36-0.36h2c0.199,0,0.36,0.161,0.36,0.36v2c0,0.199-0.161,0.36-0.36,0.36h-1.64V10 C28.36,10.199,28.199,10.36,28,10.36z M25.36,9.64h2.279V7.36H25.36V9.64z M28.36,6.64h1.279V5.36H28.36V6.64z M12,7.36H8 C7.801,7.36,7.64,7.199,7.64,7V3c0-0.199,0.161-0.36,0.36-0.36h4c0.199,0,0.36,0.161,0.36,0.36v4C12.36,7.199,12.199,7.36,12,7.36z M8.36,6.64h3.28V3.36H8.36V6.64z M21,3.36h-2c-0.199,0-0.36-0.161-0.36-0.36V1c0-0.199,0.161-0.36,0.36-0.36h2 c0.199,0,0.36,0.161,0.36,0.36v2C21.36,3.199,21.199,3.36,21,3.36z M19.36,2.64h1.279V1.36H19.36V2.64z"/></svg>',
@@ -57,33 +61,7 @@ T = {
  "mission_h": "رسالتنا", "mission": "نطوّر وننشر أنظمة ذكاء الأعمال بالذكاء الاصطناعي وحلول GeoAI وأنظمة دعم قرار للمحافظ والمشاريع، لتساعد الجهات السعودية على التعامل مع بياناتها بوصفها أصلًا استراتيجيًا. وبدمج الهندسة المتقدمة للذكاء الاصطناعي المؤسسي مع GeoAI وممارسات إدارة المحافظ والبرامج والمشاريع المعتمدة، نحوّل البيانات المعقدة إلى معلومات جاهزة لمجلس الإدارة.",
  "gap_h": "لماذا وُجدنا", "gap": "معظم الجهات تقدّم قطعة واحدة من الصورة. شركات الاستشارات الهندسية التقليدية تقدّم دراسات فنية ويبقى تتبّع المحافظ والمشاريع يدويًا، وشركات الذكاء الاصطناعي تبني النماذج دون فهم لعدم اليقين في البيانات البيئية والمكانية. نحن نجمع الأمور الثلاثة: دعم القرار للمحافظ والمشاريع، وGeoAI، والنشر التشغيلي للذكاء الاصطناعي، في كيان سعودي واحد.",
  "svc_more": "ما الذي يشمله", "svc_eyebrow": "خدماتنا", "svc_h": "ثلاث ركائز متكاملة",
- "pillars": [
-  {"icon": "ai", "h": "الذكاء الاصطناعي المؤسسي",
-   "story": "تقضي فرقك ساعات في موافقات يدوية ومستندات متفرقة وأنظمة لا تتواصل فيما بينها.",
-   "tags": ["الأتمتة", "النشر السيادي", "ذكاء المستندات"],
-   "outcome": "ذكاء اصطناعي يعمل داخل ضوابط الأمن والامتثال لديك.",
-   "items": ["وكلاء ذكاء اصطناعي وأتمتة لسير العمل تحت إشراف بشري",
-             "خرائط طريق للتحول الرقمي ودعم التبني",
-             "منصات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي",
-             "البحث في المستندات وذكاء المعرفة بالعربية والإنجليزية",
-             "نشر خاص ومحلي وسيادي متوافق مع NCA-ECC وإرشادات سدايا ونظام حماية البيانات الشخصية"]},
-  {"icon": "geo", "h": "الذكاء الجيومكاني ونظم المعلومات الجغرافية",
-   "story": "أصولك موزعة على الخريطة، والبيانات التي تصفها حبيسة أنظمة منفصلة.",
-   "tags": ["تحليل صور الأقمار الصناعية", "البنية المكانية للبيانات", "التوائم الرقمية"],
-   "outcome": "من بيانات الأقمار الصناعية إلى قرار مجلس الإدارة.",
-   "items": ["نمذجة GeoAI من صور الأقمار الصناعية وبيانات الاستشعار عن بعد",
-             "تصميم قواعد البيانات الجيومكانية والبنية المكانية للبيانات (SDI)",
-             "مراقبة البنية التحتية والوعي بالعمليات الميدانية",
-             "تقييم جاهزية التوأم الرقمي وتصميمه وخارطة تنفيذه"]},
-  {"icon": "gov", "h": "دعم القرار للمحافظ والمشاريع",
-   "story": "لديك عشرات المشاريع قيد التنفيذ، ولا توجد رؤية واحدة للتكلفة والجدول الزمني والمخاطر.",
-   "tags": ["لوحات حيّة", "ممارسات معتمدة", "برامج التحول"],
-   "outcome": "رؤية واحدة واضحة لسير العمل، لتتخذ قرارك بثقة.",
-   "items": ["لوحات حيّة للتكلفة والجدول الزمني والمخاطر",
-             "أنظمة مبنية على ممارسات PfMP وPgMP وPMP المعتمدة",
-             "دعم القرار لبرامج التحول الرقمي",
-             "القرار والتحكم يبقيان لديك، ونحن نوفر لك النظام"]},
- ],
+ "pillars": [{'icon': 'ai', 'h': 'الذكاء الاصطناعي المؤسسي والتحول الرقمي', 'story': 'ذكاء اصطناعي يعمل لصالحك، وبياناتك تبقى تحت سيطرتك.', 'tags': ['الأتمتة', 'النشر السيادي', 'ذكاء المستندات'], 'outcome': 'أن تستفيد مؤسستك من إمكانات الذكاء الاصطناعي، دون التنازل عن التحكم أو الأمن أو الثقة.', 'items': [('وكلاء الذكاء الاصطناعي وأتمتة إجراءات العمل', 'تقليل العمل اليدوي في الموافقات والطلبات، مع بقاء القرار النهائي بيد فريقك.'), ('التحول الرقمي وتطوير نماذج العمل', 'خارطة طريق واضحة تحدد أين يضيف الذكاء الاصطناعي قيمة حقيقية، وكيف تتبنّاه فرقك.'), ('تطوير المنصات والتطبيقات الذكية', 'منصات وتطبيقات مصممة لاحتياجك، جاهزة للتشغيل والتوسع.'), ('إدارة المعرفة وذكاء المستندات', 'الوصول إلى أي معلومة في مستنداتك بالعربية والإنجليزية خلال ثوانٍ.'), ('حلول ذكاء اصطناعي خاصة ورائدة، وبياناتك داخل المملكة', 'تُشغَّل في مراكز بياناتك أو على سحابة سعودية، وفق ضوابط NCA-ECC وNDMO وإرشادات سدايا ونظام حماية البيانات الشخصية.')], 'work': []}, {'icon': 'geo', 'h': 'GeoAI والاستشارات المكانية', 'story': 'نفهم المكان، لنكشف ما وراء البيانات.', 'tags': ['تحليل صور الأقمار الصناعية', 'البنية المكانية للبيانات', 'التوائم الرقمية'], 'outcome': 'تحويل البيانات المكانية إلى معرفة قابلة للاستخدام، تساعد على فهم الواقع واستشراف المستقبل وإدارة الموارد بصورة أكثر كفاءة.', 'items': [('تحليلات GeoAI لصور الأقمار الصناعية والبيانات المكانية', 'نماذج تحلل صور الأقمار الصناعية وبيانات الاستشعار عن بعد لرصد التغيّر واكتشاف الأنماط.'), ('قواعد البيانات والبنية التحتية للبيانات المكانية', 'قواعد بيانات جيومكانية موحّدة وفق معايير NDMO، تكون مرجعًا واحدًا لكل الجهات المعنية.'), ('الذكاء المكاني والتشغيل الذكي', 'رؤية لحظية للأصول والعمليات الميدانية، لتتحرك فرقك في الوقت والمكان المناسبين.'), ('التوائم الرقمية للبنية التحتية', 'نسخة رقمية حيّة من أصولك تتيح اختبار القرارات قبل تنفيذها على الأرض.')], 'work': []}, {'icon': 'gov', 'h': 'دعم القرار واستشارات المحافظ والبرامج والمشاريع', 'story': 'رؤية متكاملة تمنحك الوضوح والتحكم في قراراتك.', 'tags': ['لوحات حيّة', 'ممارسات معتمدة', 'برامج التحول'], 'outcome': 'أن تنتقل من متابعة التقارير إلى فهم الأداء، ومن رصد المشكلات إلى استباقها، ومن إدارة الأنشطة إلى تحقيق النتائج.', 'items': [('لوحات المعلومات والتحليلات التنفيذية', 'صورة واحدة محدّثة للتكلفة والجدول الزمني والمخاطر، بلغة يفهمها متخذ القرار.'), ('أنظمة متابعة المحافظ والبرامج والمشاريع', 'متابعة الأداء عبر كل المشاريع من مكان واحد، مع إنذار مبكر بالانحرافات.'), ('دعم القرار المبني على أفضل الممارسات المهنية', 'أنظمة يصممها خبراء حاصلون على اعتمادات PfMP وPgMP وPMP.'), ('دعم برامج التحول الرقمي', 'حوكمة ومتابعة برامج التحول من التخطيط حتى قياس الأثر.')], 'work': [('Accelerat 360', 'منصة للحوكمة وإدارة المخاطر والامتثال (GRC)، نطوّرها بالشراكة مع Accelerate Consulting.', 'https://accelerat360.ai/'), ('قريبًا: ProPerM', 'منصة لإدارة أداء المشاريع.', '')]}],
  "proj_eyebrow": "خبراتنا", "proj_h": "نماذج من خبراتنا",
  "proj_note": "تحافظ إليفانتك على السرية. تُشارك المراجع التفصيلية ودراسات الحالة مباشرة، بعد توقيع اتفاقيات السرية المناسبة. وتمثل الفئات أدناه الخبرة المجمّعة لقيادة الشركة وفرق شركائها.",
  "proj_cols": ("القطاع", "نوع المشروع", "دورنا"),
@@ -156,33 +134,7 @@ T = {
  "mission_h": "Our mission", "mission": "We develop and deploy AI business-intelligence systems, GeoAI solutions and decision-support systems for portfolios and projects, helping Saudi organizations treat data as a strategic asset. By combining enterprise-grade AI engineering, GeoAI, and certified portfolio, program and project management practice, we turn complex data into boardroom-ready intelligence.",
  "gap_h": "Why we exist", "gap": "Most firms offer one piece of the puzzle. Traditional engineering consultancies deliver technical studies but leave portfolios and projects tracked by hand. Pure AI firms build models but do not understand real-world uncertainty in environmental and spatial data. We bring all three together under one Saudi-registered entity: portfolio and project decision support, GeoAI and operational AI deployment.",
  "svc_more": "See what’s included", "svc_eyebrow": "Services", "svc_h": "Three integrated pillars",
- "pillars": [
-  {"icon": "ai", "h": "Enterprise AI",
-   "story": "Your teams lose hours to manual approvals, scattered documents and systems that don’t talk to each other.",
-   "tags": ["Automation", "Sovereign deployment", "Document intelligence"],
-   "outcome": "AI that works inside your security and compliance controls.",
-   "items": ["Human-supervised AI agents and workflow automation",
-             "Digital transformation roadmaps and adoption",
-             "Custom AI-powered platforms and applications",
-             "Arabic and English document search and knowledge intelligence",
-             "Private, on-premises and sovereign deployment aligned with NCA-ECC, SDAIA guidance and PDPL"]},
-  {"icon": "geo", "h": "GeoAI and GIS",
-   "story": "Your assets are spread across the map, and the data that describes them sits in separate systems.",
-   "tags": ["Satellite analytics", "Spatial data infrastructure", "Digital twins"],
-   "outcome": "From satellite data to a boardroom decision.",
-   "items": ["GeoAI modeling from satellite and remote-sensing data",
-             "Geospatial database and spatial data infrastructure (SDI) design",
-             "Infrastructure monitoring and field operations awareness",
-             "Digital twin readiness, architecture and roadmap"]},
-  {"icon": "gov", "h": "Portfolio decision support",
-   "story": "You have dozens of projects running, and no single view of cost, schedule and risk.",
-   "tags": ["Live dashboards", "Certified practice", "Transformation programs"],
-   "outcome": "One clear view of how the work is moving, so you decide with confidence.",
-   "items": ["Live dashboards on cost, schedule and risk",
-             "Systems built on certified PfMP, PgMP and PMP practice",
-             "Decision support for digital transformation programs",
-             "You keep the decisions and control; we give you the system"]},
- ],
+ "pillars": [{'icon': 'ai', 'h': 'Enterprise AI and digital transformation', 'story': 'AI that works for you, while your data stays under your control.', 'tags': ['Automation', 'Sovereign deployment', 'Document intelligence'], 'outcome': 'Your organization gets the full potential of AI without giving up control, security or trust.', 'items': [('AI agents and workflow automation', 'Less manual work on approvals and requests, with the final decision staying with your team.'), ('Digital transformation and operating models', 'A clear roadmap showing where AI adds real value, and how your teams adopt it.'), ('Intelligent platforms and applications', 'Platforms and apps built around your needs, ready to run and scale.'), ('Knowledge management and document intelligence', 'Find any information in your documents, in Arabic or English, within seconds.'), ('Private, leading AI solutions, with your data in the Kingdom', 'Run in your own data centers or on a Saudi cloud, in line with NCA-ECC, NDMO, SDAIA guidance and PDPL.')], 'work': []}, {'icon': 'geo', 'h': 'GeoAI and spatial advisory', 'story': 'We understand place, to reveal what lies beyond the data.', 'tags': ['Satellite analytics', 'Spatial data infrastructure', 'Digital twins'], 'outcome': 'Spatial data turned into usable knowledge that helps you understand the present, anticipate the future and manage resources more efficiently.', 'items': [('GeoAI analytics for satellite imagery and spatial data', 'Models that analyze satellite and remote-sensing data to detect change and spot patterns.'), ('Geospatial databases and spatial data infrastructure', 'Unified geospatial databases built to NDMO standards, one reference for every stakeholder.'), ('Spatial intelligence and smart operations', 'A real-time view of assets and field operations, so your teams act at the right time and place.'), ('Digital twins for infrastructure', 'A living digital copy of your assets, so you can test decisions before acting on the ground.')], 'work': []}, {'icon': 'gov', 'h': 'Decision support and portfolio, program and project advisory', 'story': 'An integrated view that gives you clarity and control over your decisions.', 'tags': ['Live dashboards', 'Certified practice', 'Transformation programs'], 'outcome': 'Move from tracking reports to understanding performance, from spotting problems to anticipating them, and from managing activities to achieving results.', 'items': [('Executive dashboards and analytics', 'One up-to-date picture of cost, schedule and risk, in the language decision-makers use.'), ('Portfolio, program and project tracking systems', 'Track performance across every project in one place, with early warning on deviations.'), ('Decision support built on professional best practice', 'Systems designed by experts certified in PfMP, PgMP and PMP.'), ('Digital transformation program support', 'Governance and tracking for transformation programs, from planning to impact measurement.')], 'work': [('Accelerat 360', 'A governance, risk and compliance (GRC) platform we are developing with Accelerate Consulting.', 'https://accelerat360.ai/'), ('Coming soon: ProPerM', 'a project performance management platform.', '')]}],
  "proj_eyebrow": "Experience", "proj_h": "Representative experience",
  "proj_note": "Elevantec prioritizes confidentiality. Specific organizational references and detailed case studies are shared directly under appropriate confidentiality agreements. The categories below represent the combined track record of our leadership and partner teams.",
  "proj_cols": ("Sector", "Project type", "Our role"),
@@ -239,6 +191,9 @@ T = {
 },
 }
 
+CONTENT_V2 = {"ar": {'slogan': 'رؤية أوضح. قرارات أفضل. أثر مستدام.', 'h1': 'من التعقيد إلى الوضوح، ومن الرؤية إلى الأثر.', 'lead': 'نضع الذكاء الاصطناعي والبيانات والتحليل الجيومكاني في خدمة قرارات أفضل ومشاريع أكثر نجاحًا. للجهات الحكومية، والقطاعات الخاضعة للتنظيم مثل المالية والصحة والطاقة، والشركات النامية.', 'pillars_line': ['الذكاء الاصطناعي المؤسسي', 'GeoAI', 'دعم القرار واستشارات المحافظ والبرامج والمشاريع'], 'cta_book': 'احجز استشارة', 'cta_profile': 'حمّل الملف التعريفي', 'trust': [('location', 'شركة سعودية مقرها الرياض.'), ('sovereign-cloud', 'نستضيف بياناتك داخل المملكة.'), ('compliance', 'حلول متوافقة مع NCA-ECC وNDMO وهيئة الحكومة الرقمية ونظام حماية البيانات الشخصية.'), ('growth', 'نساهم في تعزيز المحتوى المحلي ونقل المعرفة، دعمًا لمستهدفات رؤية المملكة 2030.')], 'svc_h': 'من البيانات إلى القرار، بأمان وبالعربية أولًا.', 'svc_intro1': 'تملك مؤسستك اليوم بيانات أكثر من أي وقت مضى، لكن الوصول إلى قرار واضح وسريع ما زال تحديًا.', 'svc_intro2': 'نساعد الجهات الحكومية والشركات والمنشآت على توظيف الذكاء الاصطناعي والبيانات والتحليل الجيومكاني، وتطوير أنظمة ذكية لدعم القرار وتحسين الأداء، ضمن بيئات آمنة وسيادية تتوافق مع ضوابط الهيئة الوطنية للأمن السيبراني (NCA-ECC) ونظام حماية البيانات الشخصية، ومعايير مكتب إدارة البيانات الوطنية (NDMO) وهيئة الحكومة الرقمية (DGA)، مع استضافة البيانات داخل المملكة.', 'how_h': 'كيف نعمل', 'how': ['فهم التحدي', 'تصميم الحل', 'التنفيذ', 'قياس الأثر'], 'pillars_intro': 'نعمل من خلال ثلاث ركائز متكاملة:', 'outcome_label': 'النتيجة', 'work_h': 'من أعمالنا', 'why_h2': 'لماذا إليفانتك؟', 'contact_p': 'اكتب لنا عن احتياجك. يرد عليك فريقنا في الرياض، وتُعامل جميع الاستفسارات بسرية تامة.'},
+ "en": {'slogan': 'Clearer vision. Better decisions. Lasting impact.', 'h1': 'From complexity to clarity, from vision to impact.', 'lead': 'We put AI, data and geospatial analytics to work for better decisions and more successful projects. For government entities, regulated sectors such as finance, health and energy, and growing companies.', 'pillars_line': ['Enterprise AI', 'GeoAI', 'Decision support and portfolio, program and project advisory'], 'cta_book': 'Book a consultation', 'cta_profile': 'Download the company profile', 'trust': [('location', 'A Saudi company headquartered in Riyadh.'), ('sovereign-cloud', 'We host your data inside the Kingdom.'), ('compliance', 'Solutions aligned with NCA-ECC, NDMO, the Digital Government Authority and PDPL.'), ('growth', 'We build local content and transfer knowledge, in support of Saudi Vision 2030.')], 'svc_h': 'From data to decision, securely and Arabic-first.', 'svc_intro1': 'Your organization has more data than ever, yet reaching a clear, fast decision is still a challenge.', 'svc_intro2': 'We help government entities, companies and organizations put AI, data and geospatial analytics to work, and build intelligent systems that support decisions and improve performance. Everything runs in secure, sovereign environments aligned with the National Cybersecurity Authority controls (NCA-ECC), the Personal Data Protection Law (PDPL), and the standards of the National Data Management Office (NDMO) and the Digital Government Authority (DGA), with data hosted inside the Kingdom.', 'how_h': 'How we work', 'how': ['Understand the challenge', 'Design the solution', 'Deliver', 'Measure the impact'], 'pillars_intro': 'We work through three integrated pillars:', 'outcome_label': 'Outcome', 'work_h': 'Our work', 'why_h2': 'Why Elevantec?', 'contact_p': 'Tell us what you need. Our team in Riyadh will get back to you, and all inquiries are handled with strict confidentiality.'}}
+for _l in T: T[_l].update(CONTENT_V2[_l])
 for _l in T: T[_l]["why"] = [T[_l]["why"][i] for i in (3, 2, 0, 1, 4)]   # display order
 
 # ---------------------------------------------------------------- helpers
@@ -384,27 +339,36 @@ def sec_partners(t):
 '''
 
 def sec_about(t):
-    why = "".join(f'<div class="card"><h3>{esc(a)}</h3><p>{esc(b)}</p></div>' for a, b in t["why"])
+    why = "".join(f'<div class="card why4">{CICON(i)}<p>{esc(x)}</p></div>' for i, x in t["trust"])
     return f'''<section class="alt"><div class="wrap stack g48">
   <div class="cols"><div class="stack g12"><h2 style="font-size:28px">{t["vision_h"]}</h2><p class="muted">{t["vision"]}</p></div><div class="stack g12"><h2 style="font-size:28px">{t["mission_h"]}</h2><p class="muted">{t["mission"]}</p></div></div>
   <div class="stack g12 gap-note"><h3>{t["gap_h"]}</h3><p class="muted">{t["gap"]}</p></div>
 </div></section>
 <section><div class="wrap stack g48">
-  <div class="stack g12" style="max-width:640px"><p class="eyebrow">{t["why_eyebrow"]}</p><h2>{t["why_h"]}</h2></div>
-  <div class="cards sme">{why}</div>
+  <div class="stack g12" style="max-width:640px"><h2>{t["why_h2"]}</h2></div>
+  <div class="why4s">{why}</div>
 </div></section>
 '''
 
-def sec_services(t):
+def sec_services(t, lang):
     cards = outs = ""
     for p in t["pillars"]:
         tags = "".join(f"<li>{esc(x)}</li>" for x in p["tags"])
-        items = "".join(f"<li>{esc(x)}</li>" for x in p["items"])
+        items = "".join(f"<li><b>{esc(h)}</b><span>{esc(d)}</span></li>" for h, d in p["items"])
+        work = ""
+        if p.get("work"):
+            w = "".join((f'<li><a href="{u}" target="_blank" rel="noopener"><b><bdi>{esc(n)}</bdi></b></a>: <span>{esc(d)}</span></li>' if u else f'<li><b>{esc(n)}</b>{"، " if lang == "ar" else ", "}<span>{esc(d)}</span></li>') for n, d, u in p["work"])
+            work = f'<div class="work-list"><p class="wl-h">{t["work_h"]}</p><ul>{w}</ul></div>'
         cards += f'''<div class="card pcard">{ICONS[p["icon"]]}<h2>{esc(p["h"])}</h2><p class="story">{esc(p["story"])}</p><ul class="tags">{tags}</ul>
-<details><summary>{t["svc_more"]}</summary><ul class="incl">{items}</ul></details></div>
+<details><summary>{t["svc_more"]}</summary><ul class="incl">{items}</ul></details>{work}</div>
 '''
-        outs += f'<p>{esc(p["outcome"])}</p>'
-    return f'''<section><div class="wrap stack g48"><div class="pcards">{cards}</div><div class="outcomes">{outs}</div></div></section>
+        outs += f'<div><p class="ol">{t["outcome_label"]}</p><p>{esc(p["outcome"])}</p></div>'
+    how = "".join(f'<li><em>0{i+1}</em><span>{esc(x)}</span></li>' for i, x in enumerate(t["how"]))
+    first, second = (("ar", "profile_ar"), ("en", "profile_en")) if lang == "ar" else (("en", "profile_en"), ("ar", "profile_ar"))
+    return f'''<section class="svc-intro"><div class="wrap stack g28"><div class="stack g20" style="max-width:78ch"><p class="lead2">{t["svc_intro1"]}</p><p class="muted">{t["svc_intro2"]}</p></div>
+<div class="how"><p class="how-h">{t["how_h"]}</p><ol>{how}</ol></div></div></section>
+<section><div class="wrap stack g48"><h2 class="pi">{t["pillars_intro"]}</h2><div class="pcards">{cards}</div><div class="outcomes">{outs}</div>
+<div class="btns svc-cta"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta_book"]}</a><a class="btn" href="{PROFILE[first[0]]}" download>{t["cta_profile"]}</a></div></div></section>
 '''
 
 def sec_projects(t):
@@ -462,7 +426,7 @@ SUB = {"services": "svc_h"}
 
 def page(lang, key):
     t = T[lang]; eb, hh = HEAD[key]
-    sec = {"about": lambda: sec_about(t), "services": lambda: sec_services(t), "projects": lambda: sec_projects(t),
+    sec = {"about": lambda: sec_about(t), "services": lambda: sec_services(t, lang), "projects": lambda: sec_projects(t),
            "team": lambda: sec_team(t), "partners": lambda: sec_partners(t), "news": lambda: sec_news(lang, t), "contact": lambda: sec_contact(lang, t)}[key]()
     title = f'{(t["nav_services"] if key in SUB else t[hh])} | {t["brand"]}'
     desc = {"about": t["vision"], "services": t["gap"][:0] + GO[lang]["services"], "projects": GO[lang]["projects"],
@@ -482,7 +446,8 @@ def page(lang, key):
 def home(lang):
     t = T[lang]; g = GO[lang]
     arrow = "←" if lang == "ar" else "→"
-    trust = "".join("<li>" + esc(x).replace("PfMP · PgMP · PMP", "<bdi>PfMP · PgMP · PMP</bdi>") + "</li>" for x in t["trust"])
+    trust = "".join(f"<li>{CICON(i)}<span>{esc(x)}</span></li>" for i, x in t["trust"])
+    pline = '<span aria-hidden="true">|</span>'.join(f"<span>{esc(x)}</span>" for x in t["pillars_line"])
     logo = "/assets/img/logo-en.png"   # same English logo on both language versions
     dims = (221, 350)
     names = dict(t["nav"])
@@ -492,17 +457,19 @@ def home(lang):
 <section class="hero">
   <div class="wrap cols" style="align-items:center">
     <div class="stack g28">
+      <p class="eyebrow slogan">{t["slogan"]}</p>
       <h1>{t["h1"]}</h1>
       <p class="lead">{t["lead"]}</p>
-      <div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta1"]}</a><a class="btn" href="{path_for(lang, "services")}">{t["cta2"]}</a></div>
+      <p class="pline">{pline}</p>
+      <div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta_book"]}</a><a class="btn" href="{path_for(lang, "services")}">{t["cta2"]}</a></div>
     </div>
     <div class="hero-art"><div class="emb"><img src="{logo}" alt="{t["logo_alt"]}" width="{dims[0]}" height="{dims[1]}" fetchpriority="high"><span class="sheen" style="--m:url({logo})" aria-hidden="true"></span></div></div>
   </div>
 </section>
-<section class="trustbar"><div class="wrap"><ul>{trust}</ul></div></section>
+<section class="trustbar"><div class="wrap"><h2 class="vh">{t["why_h2"]}</h2><ul>{trust}</ul></div></section>
 <section><div class="wrap stack g48"><h2>{g["explore_h"]}</h2><div class="cards">{cards}</div></div></section>
 {sec_profile(lang, t)}
-<section class="alt cta"><div class="wrap"><div class="stack g12"><h2>{t["contact_h"]}</h2><p class="muted">{g["contact"]}</p></div><div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta1"]}</a></div></div></section>
+<section class="alt cta"><div class="wrap"><div class="stack g12"><h2>{t["contact_h"]}</h2><p class="muted">{g["contact"]}</p></div><div class="btns"><a class="btn gold" href="{path_for(lang, "contact")}">{t["cta_book"]}</a></div></div></section>
 </main>
 {footer(lang)}<script src="{JS}" defer></script>
 </body></html>
