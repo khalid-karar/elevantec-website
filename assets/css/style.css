@@ -562,3 +562,7 @@ html[lang="ar"] .outcomes .ol{letter-spacing:0;font-size:14px!important}
 h2.pi{font-size:19px!important}
 .card.pcard details{margin-top:0!important}
 .work-list{margin-top:4px}
+
+/* team contact icons */
+.card.person ul:not(.creds) li a{display:inline-flex;align-items:center;gap:10px}
+.card.person .ci{width:20px;height:20px;flex:none;color:var(--gold-deep)}
